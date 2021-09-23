@@ -4,8 +4,10 @@
 
 ## Autores:
 
-qualquer mensagem
+qualquer mensagem, mensagem
 <p> Nome: Adriano Ferreira dos Anjos Neto &emsp; - &emsp; RGM: 13317920
 <p> Nome: Eliane de Queiroz de Paula &emsp; - &emsp; RGM: 13313851
 <p>Nome: Maicon Lucas Campos Businari &emsp; - &emsp; RGM: 13359444
 <p>Nome: Pedro Henrique Trombetta Kappes &emsp; - &emsp; RGM: 1903478
+
+<p>"desejo do fundo do meu coração que dessa vez o commit seja realizado com sucesso!"
