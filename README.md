@@ -6,6 +6,6 @@
 
 dare
 <p> Nome: Adriano Ferreira dos Anjos Neto &emsp; - &emsp; RGM: 13317920
-<p> Nome: Eliane de Queiroz &emsp; - &emsp; RGM: 13313851
+<p> Nome: Eliane de Queiroz de Paula &emsp; - &emsp; RGM: 13313851
 <p>Nome: Maicon Lucas Campos Businari &emsp; - &emsp; RGM: 13359444
 <p>Nome: Pedro Henrique Trombetta Kappes &emsp; - &emsp; RGM: 1903478
