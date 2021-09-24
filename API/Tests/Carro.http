@@ -1,0 +1,9 @@
+###
+POST https://localhost:5001/api/carro/entradadecarro
+Content-Type: application/json
+
+{
+    "Modelo" : "Corsa",
+    "Placa" : "abc-1234",
+    "Cor" : "Preto"
+}
