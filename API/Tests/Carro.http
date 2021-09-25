@@ -1,37 +1,28 @@
-###
+
+### Create - Criar
 POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "limonise",
-    "Placa" : "ccc-5544",
+    "Modelo" : "Gol",
+    "Placa" : "c34-LoiO",
     "Cor" : "Laranja" 
 }
 
 
-###
 
+### Read - Listar
 GET https://localhost:5001/api/carro/relacaodecarros
 
-### teste 
-GET https://localhost:5001/api/carro/teste
 
 
-###
-
+### Buscar
 GET https://localhost:5001/api/carro/buscarporcarroid/2
 
 
 
-###
 
-DELETE https://localhost:5001/api/carro/removerporcarronome/ccc-5544
-
-###
-
-DELETE https://localhost:5001/api/carro/removerporcarroid/2
-
-###
+### Update - Atualizar por Id
 PUT https://localhost:5001/api/carro/atualizarporcarroid
 Content-Type: application/json
 
@@ -41,3 +32,15 @@ Content-Type: application/json
     "Placa" : "ooo-0001",
     "Cor" : "preto" 
 }
+
+
+
+### Delete - Excluir por Id
+DELETE https://localhost:5001/api/carro/removerporcarroid/2
+
+### Delete - Excluir por Nome
+DELETE https://localhost:5001/api/carro/removerporcarronome/ccc-5544
+
+
+### ainda em testes
+GET https://localhost:5001/api/carro/teste

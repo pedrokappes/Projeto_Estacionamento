@@ -18,21 +18,10 @@ namespace API.Controllers
         {
             _context = context;
 
-            
         }
-        
-        /*
-        //================================================
-        [HttpPost]
-        [Route("teste")]
-        public Carro teste()
-        {     
-            Carro carro = _context.TabelaCarros.Where(a => a.Placa == "aaa-111").FirstOrDefault();
-            return carro;
-        }
-        //================================================
-        */
-        
+
+
+        //Create - Adicionar entrada de Carros
         [HttpPost]
         [Route("entradadecarro")]
         public Carro EntradaDeCarro(Carro carro)
@@ -41,7 +30,9 @@ namespace API.Controllers
             _context.SaveChanges();
             return carro;
         }
+        
 
+        //Read - Listar relação de carros
         [HttpGet]
         [Route("relacaodecarros")]
         public List<Carro> relacaodecarros()
@@ -49,6 +40,8 @@ namespace API.Controllers
             return (_context.TabelaCarros.ToList());
         }
 
+
+        //Buscar - realizar buscar de carros por ID
         [HttpGet]
         [Route("buscarporcarroid/{id}")]
         public IActionResult buscarporcarroid([FromRoute]int id)
@@ -56,21 +49,20 @@ namespace API.Controllers
             Carro carro = _context.TabelaCarros.Find(id);
             return Ok(carro);
         }
+        
 
-
-        [HttpDelete]
-        [Route("removerporcarronome/{placa}")]
-        public IActionResult removerporcarronome([FromRoute]string placa)
+        //Upgrade - Atualizar informações dos carros listados por ID
+        [HttpPut]
+        [Route("atualizarporcarroid")]
+        public IActionResult atualizarporcarroid([FromBody] Carro carro)
         {
-            Carro carro = _context.TabelaCarros.FirstOrDefault
-            (
-                carro => carro.Placa == placa
-            );
-            _context.TabelaCarros.Remove(carro);
+            _context.TabelaCarros.Update(carro);
             _context.SaveChanges();
             return Ok(carro);
         }
 
+
+        //Delete - Excluir carros por ID
         [HttpDelete]
         [Route("removerporcarroid/{id}")]
         public IActionResult removerporcarroid([FromRoute]int id)
@@ -84,14 +76,32 @@ namespace API.Controllers
             return Ok(carro);
         }
 
-        [HttpPut]
-        [Route("atualizarporcarroid")]
-        public IActionResult atualizarporcarroid([FromBody] Carro carro)
+        //Delete - Excluir carros por PLACA
+        [HttpDelete]
+        [Route("removerporcarronome/{placa}")]
+        public IActionResult removerporcarronome([FromRoute]string placa)
         {
-            _context.TabelaCarros.Update(carro);
+            Carro carro = _context.TabelaCarros.FirstOrDefault
+            (
+                carro => carro.Placa == placa
+            );
+            _context.TabelaCarros.Remove(carro);
             _context.SaveChanges();
             return Ok(carro);
         }
+
+
+        /*
+        //================================================
+        [HttpPost]
+        [Route("teste")]
+        public Carro teste()
+        {     
+            Carro carro = _context.TabelaCarros.Where(a => a.Placa == "aaa-111").FirstOrDefault();
+            return carro;
+        }
+        //================================================
+        */
 
     }
 }
