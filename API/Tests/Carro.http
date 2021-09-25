@@ -3,7 +3,41 @@ POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "Corsa",
-    "Placa" : "abc-1234",
-    "Cor" : "Preto"
+    "Modelo" : "limonise",
+    "Placa" : "ccc-5544",
+    "Cor" : "Laranja" 
+}
+
+
+###
+
+GET https://localhost:5001/api/carro/relacaodecarros
+
+### teste 
+GET https://localhost:5001/api/carro/teste
+
+
+###
+
+GET https://localhost:5001/api/carro/buscarporcarroid/2
+
+
+
+###
+
+DELETE https://localhost:5001/api/carro/removerporcarronome/ccc-5544
+
+###
+
+DELETE https://localhost:5001/api/carro/removerporcarroid/2
+
+###
+PUT https://localhost:5001/api/carro/atualizarporcarroid
+Content-Type: application/json
+
+{
+    "CarroId" :  3,
+    "Modelo" : "Mercedes",
+    "Placa" : "ooo-0001",
+    "Cor" : "preto" 
 }

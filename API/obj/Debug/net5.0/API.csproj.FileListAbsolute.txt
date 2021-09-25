@@ -27,3 +27,42 @@ E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\obj\Debug\net5.0\ref\API.dll
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\obj\Debug\net5.0\API.pdb
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Projeto_Estacionamento\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.json
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.exe
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.deps.json
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.json
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.dev.json
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\ref\API.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\API.pdb
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfo.cs
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.Manifest.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\scopedcss\bundle\API.styles.css
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.RazorTargetAssemblyInfo.cache
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CopyComplete
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\ref\API.dll
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.pdb
+C:\Users\adfer\OneDrive\Documentos\Universidade Positivo\4S\Desenv. Software Virtual\1B\Projeto Final\Projeto_Estacionamento\API\obj\Debug\net5.0\API.genruntimeconfig.cache
