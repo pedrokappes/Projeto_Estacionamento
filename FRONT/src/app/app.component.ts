@@ -1,3 +1,5 @@
+import { PessoaService } from './services/pessoa.service';
+import { Pessoa } from './models/pessoa';
 import { Component, OnInit } from '@angular/core';
 import { Carro } from './models/carro';
 import { CarroService } from './services/carro.service';
@@ -12,7 +14,7 @@ import { CarroService } from './services/carro.service';
 export class AppComponent implements OnInit {
     relacaodecarros: Carro[] = [];
     constructor(private service: CarroService) {}
-
+   
     ngOnInit(): void {
         this.service.list().subscribe(relacaodecarros => {
             this.relacaodecarros = relacaodecarros;
@@ -21,6 +23,4 @@ export class AppComponent implements OnInit {
             }
         });
     }
-
-
 }
