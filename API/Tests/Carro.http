@@ -4,9 +4,9 @@ POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "xxx",
-    "Placa" : "bbc-666",
-    "Cor" : "Azul" 
+    "Modelo" : "Carro do maicon",
+    "Placa" : "xxx-123",
+    "Cor" : "Roxo" 
 }
 
 ### Read - Listar
@@ -30,7 +30,7 @@ Content-Type: application/json
 }
 
 ### Delete - Excluir por Id
-DELETE https://localhost:5001/api/carro/removerporcarroid/2
+DELETE https://localhost:5001/api/carro/removerporcarroid/3
 
 ### Delete - Excluir por Placa
 DELETE https://localhost:5001/api/carro/removerporcarroplaca/abc-123
