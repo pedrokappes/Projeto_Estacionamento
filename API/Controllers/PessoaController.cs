@@ -47,7 +47,7 @@ namespace API.Controllers
         [Route("bucasrporcpf/{cpf}")]
         public IActionResult bucasrporcpf([FromRoute]string cpf)
         {
-            Pessoa pessoa = _context.TabelaPessoa.Single(pessoa => pessoa.cpf == cpf);
+            Pessoa pessoa = _context.TabelaPessoa.Single(pessoa => pessoa.Cpf == cpf);
             return Ok(pessoa);          
         }
         
@@ -68,7 +68,7 @@ namespace API.Controllers
         {
             Pessoa pessoa = _context.TabelaPessoa.FirstOrDefault
             (
-                pessoa => pessoa.pessoaId == id
+                pessoa => pessoa.PessoaId == id
             );
             _context.TabelaPessoa.Remove(pessoa);
             _context.SaveChanges();

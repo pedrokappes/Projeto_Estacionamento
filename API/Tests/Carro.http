@@ -4,9 +4,9 @@ POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "Corsa",
-    "Placa" : "bbc-333",
-    "Cor" : "Laranja" 
+    "Modelo" : "xxx",
+    "Placa" : "bbc-666",
+    "Cor" : "Azul" 
 }
 
 ### Read - Listar
@@ -16,7 +16,7 @@ GET https://localhost:5001/api/carro/relacaodecarros
 GET https://localhost:5001/api/carro/buscarporcarroid/2
 
 ### Buscar - Buscar por Placa
-GET https://localhost:5001/api/carro/bucasrporplaca/bbc-333
+GET https://localhost:5001/api/carro/bucasrporplaca/bbc-666
 
 ### Update - Atualizar por Id
 PUT https://localhost:5001/api/carro/atualizarporcarroid
