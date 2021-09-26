@@ -1,0 +1,37 @@
+###Create - criar
+POST https://localhost:5001/api/pessoa/novapessoa
+Content-Type: application/json
+
+{
+    "Nome" : "Pedro",
+    "Cpf" : "01034708910",
+    "Telefone" : 41997050153
+}
+
+### Read - Listar
+GET https://localhost:5001/api/pessoa/relacaodepessoas
+
+### Buscar - Buscar por iD
+GET https://localhost:5001/api/pessoa/buscarporpessoaid/1
+
+### Buscar - Buscar por cPF
+GET https://localhost:5001/api/pessoa/bucasrporcpf/01034708910
+
+### Update - Atualizar por Id
+PUT https://localhost:5001/api/pessoa/atualizarporpessoaid
+Content-Type: application/json
+{
+    "PessoaId" :  3,
+    "Nome" : "Pedro",
+    "Cpf" : "01034708910",
+    "Telefone" : 41997050153 
+}
+
+### Delete - Excluir por Id
+DELETE https://localhost:5001/api/pessoa/removerporpessoaid/2
+
+### Delete - Excluir por Cpf
+DELETE https://localhost:5001/api/carro/removerporpessoacpf/01034708910
+
+
+

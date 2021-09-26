@@ -8,5 +8,6 @@ namespace API.Data
         public Banco(DbContextOptions<Banco> options) : base(options){}
 
         public DbSet<Carro> TabelaCarros { get; set; }
+        public DbSet<Pessoa> TabelaPessoas { get; set; }
     }
 }

@@ -4,25 +4,19 @@ POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "Palio",
+    "Modelo" : "Corsa",
     "Placa" : "bbc-333",
     "Cor" : "Laranja" 
 }
 
-
-
 ### Read - Listar
 GET https://localhost:5001/api/carro/relacaodecarros
-
-
 
 ### Buscar - Buscar por Id
 GET https://localhost:5001/api/carro/buscarporcarroid/2
 
 ### Buscar - Buscar por Placa
 GET https://localhost:5001/api/carro/bucasrporplaca/bbc-333
-
-
 
 ### Update - Atualizar por Id
 PUT https://localhost:5001/api/carro/atualizarporcarroid
@@ -35,12 +29,8 @@ Content-Type: application/json
     "Cor" : "preto" 
 }
 
-
-
 ### Delete - Excluir por Id
 DELETE https://localhost:5001/api/carro/removerporcarroid/2
 
 ### Delete - Excluir por Placa
 DELETE https://localhost:5001/api/carro/removerporcarroplaca/abc-123
-
-

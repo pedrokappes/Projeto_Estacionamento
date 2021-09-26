@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj": {}
+    "A:\\COISAS DA FACULDADE\\Projeto_Estacionamento\\API\\API.csproj": {}
   },
   "projects": {
-    "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj": {
+    "A:\\COISAS DA FACULDADE\\Projeto_Estacionamento\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj",
+        "projectUniqueName": "A:\\COISAS DA FACULDADE\\Projeto_Estacionamento\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Maicon Lucas\\.nuget\\packages\\",
-        "outputPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\obj\\",
+        "projectPath": "A:\\COISAS DA FACULDADE\\Projeto_Estacionamento\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Kappes\\.nuget\\packages\\",
+        "outputPath": "A:\\COISAS DA FACULDADE\\Projeto_Estacionamento\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Maicon Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Kappes\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

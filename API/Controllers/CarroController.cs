@@ -17,7 +17,6 @@ namespace API.Controllers
         public CarroController( Banco context)
         {
             _context = context;
-
         }
 
 
