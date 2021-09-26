@@ -10,11 +10,11 @@ import { CarroService } from './services/carro.service';
 })
 
 export class AppComponent implements OnInit {
-    relacaodecarros: Carro[] = []
+    relacaodecarros: Carro[] = [];
     constructor(private service: CarroService) {}
 
     ngOnInit(): void {
-        this.service.list().subscribe((relacaodecarros) => {
+        this.service.list().subscribe(relacaodecarros => {
             this.relacaodecarros = relacaodecarros;
             for(let carro of relacaodecarros){
                 console.log(carro);

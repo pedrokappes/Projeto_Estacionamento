@@ -49,6 +49,16 @@ namespace API.Controllers
             Carro carro = _context.TabelaCarros.Find(id);
             return Ok(carro);
         }
+
+        //Buscar - realizar buscar de carros pela placa
+        [HttpGet]
+        [Route("bucasrporplaca/{placa}")]
+        public IActionResult bucasrporplaca([FromRoute]string placa)
+        {
+            Carro carro = _context.TabelaCarros.Single(carro => carro.Placa == placa);
+            return Ok(carro);          
+        }
+
         
 
         //Upgrade - Atualizar informações dos carros listados por ID
@@ -78,8 +88,8 @@ namespace API.Controllers
 
         //Delete - Excluir carros por PLACA
         [HttpDelete]
-        [Route("removerporcarronome/{placa}")]
-        public IActionResult removerporcarronome([FromRoute]string placa)
+        [Route("removerporcarroplaca/{placa}")]
+        public IActionResult removerporcarroplaca([FromRoute]string placa)
         {
             Carro carro = _context.TabelaCarros.FirstOrDefault
             (
@@ -89,19 +99,6 @@ namespace API.Controllers
             _context.SaveChanges();
             return Ok(carro);
         }
-
-
-        /*
-        //================================================
-        [HttpPost]
-        [Route("teste")]
-        public Carro teste()
-        {     
-            Carro carro = _context.TabelaCarros.Where(a => a.Placa == "aaa-111").FirstOrDefault();
-            return carro;
-        }
-        //================================================
-        */
 
     }
 }

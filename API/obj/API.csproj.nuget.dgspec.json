@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adfer\\OneDrive\\Documentos\\Universidade Positivo\\4S\\Desenv. Software Virtual\\1B\\Projeto Final\\Projeto_Estacionamento\\API\\API.csproj": {}
+    "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adfer\\OneDrive\\Documentos\\Universidade Positivo\\4S\\Desenv. Software Virtual\\1B\\Projeto Final\\Projeto_Estacionamento\\API\\API.csproj": {
+    "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adfer\\OneDrive\\Documentos\\Universidade Positivo\\4S\\Desenv. Software Virtual\\1B\\Projeto Final\\Projeto_Estacionamento\\API\\API.csproj",
+        "projectUniqueName": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\adfer\\OneDrive\\Documentos\\Universidade Positivo\\4S\\Desenv. Software Virtual\\1B\\Projeto Final\\Projeto_Estacionamento\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\adfer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adfer\\OneDrive\\Documentos\\Universidade Positivo\\4S\\Desenv. Software Virtual\\1B\\Projeto Final\\Projeto_Estacionamento\\API\\obj\\",
+        "projectPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Maicon Lucas\\.nuget\\packages\\",
+        "outputPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adfer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Maicon Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

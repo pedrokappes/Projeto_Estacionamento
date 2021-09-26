@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class CarroService {
 
-    private baseURL = "http://localhost:5000/api";
+    private baseURL = "http://localhost:5000/api/carro";
 
     constructor(private http: HttpClient) {}
 
     list(): Observable<Carro[]> {
-        return this.http.get<Carro[]>(`${this.baseURL}/carro/relacaodecarros`);
+        return this.http.get<Carro[]>(`${this.baseURL}/relacaodecarros`);
     }
 }
