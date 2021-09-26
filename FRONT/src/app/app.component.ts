@@ -11,16 +11,4 @@ import { CarroService } from './services/carro.service';
     styles: []
 })
 
-export class AppComponent implements OnInit {
-    relacaodecarros: Carro[] = [];
-    constructor(private service: CarroService) {}
-   
-    ngOnInit(): void {
-        this.service.list().subscribe(relacaodecarros => {
-            this.relacaodecarros = relacaodecarros;
-            for(let carro of relacaodecarros){
-                console.log(carro);
-            }
-        });
-    }
-}
+export class AppComponent {}
