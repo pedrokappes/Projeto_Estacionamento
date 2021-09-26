@@ -3,18 +3,18 @@ POST https://localhost:5001/api/pessoa/novapessoa
 Content-Type: application/json
 
 {
-    "Nome" : "Pedro",
-    "Cpf" : "01034708910",
-    "Telefone" : 41997050153
+    "Nome" : "Adriano",
+    "Cpf" : "1903478",
+    "Telefone" : "555666321"
 }
 
 ### Read - Listar
 GET https://localhost:5001/api/pessoa/relacaodepessoas
 
 ### Buscar - Buscar por iD
-GET https://localhost:5001/api/pessoa/buscarporpessoaid/1
+GET https://localhost:5001/api/pessoa/buscarporpessoaid/4
 
-### Buscar - Buscar por cPF
+### Buscar - Buscar por Cpf
 GET https://localhost:5001/api/pessoa/bucasrporcpf/01034708910
 
 ### Update - Atualizar por Id
@@ -31,7 +31,7 @@ Content-Type: application/json
 DELETE https://localhost:5001/api/pessoa/removerporpessoaid/2
 
 ### Delete - Excluir por Cpf
-DELETE https://localhost:5001/api/carro/removerporpessoacpf/01034708910
+DELETE https://localhost:5001/api/pessoa/removerporpessoacpf/01034708910
 
 
 
