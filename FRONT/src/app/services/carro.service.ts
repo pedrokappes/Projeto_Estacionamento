@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Carro } from './../models/carro';
+import { Carro } from '../models/carro';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 
