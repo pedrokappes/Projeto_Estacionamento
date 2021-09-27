@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "Id" : 0,
-    "Ocupada" : 1,
+    "Ocupada" : true,
     "Tipo" : 1
 }
 
@@ -20,7 +20,7 @@ PUT https://localhost:5001/api/vaga/atualizarporvagaid
 Content-Type: application/json
 {   
     "Id" : 1,
-    "Ocupada" : 0,
+    "Ocupada" : false,
     "Tipo" : 1 
 }
 
