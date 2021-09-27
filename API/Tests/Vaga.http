@@ -1,0 +1,34 @@
+###Create - criar
+POST https://localhost:5001/api/vaga/novavaga
+Content-Type: application/json
+
+{
+    "Id" : 0,
+    "Ocupada" : 1,
+    "Tipo" : 1
+}
+
+### Read - Listar
+GET https://localhost:5001/api/vaga/relacaodevagas
+
+### Buscar - Buscar por iD
+GET https://localhost:5001/api/vaga/buscarporvagaid/4
+
+
+### Update - Atualizar por Id
+PUT https://localhost:5001/api/vaga/atualizarporvagaid
+Content-Type: application/json
+{   
+    "Id" : 1,
+    "Ocupada" : 0,
+    "Tipo" : 1 
+}
+
+### Delete - Excluir por Id
+DELETE https://localhost:5001/api/vaga/removerporvagaid/2
+
+### Delete - Excluir por Cpf
+DELETE https://localhost:5001/api/pessoa/removerporvagacpf/01034708910
+
+
+
