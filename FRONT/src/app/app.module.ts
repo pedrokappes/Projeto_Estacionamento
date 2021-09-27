@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListarCarroComponent } from './components/views/carro/listar-carro/listar-carro.component';
 import { CadastrarCarroComponent } from './components/views/carro/cadastrar-carro/cadastrar-carro.component';
 import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/pessoa-listar.component';
+import { VagaListarComponent } from './components/views/vaga/vaga-listar/varga-listar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         ListarCarroComponent,
         CadastrarCarroComponent,
-        PessoaListarComponent
+        PessoaListarComponent,
+        VagaListarComponent
     ],
     imports: [
         BrowserModule,
