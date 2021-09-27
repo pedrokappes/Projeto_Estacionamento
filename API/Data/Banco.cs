@@ -9,5 +9,6 @@ namespace API.Data
 
         public DbSet<Carro> TabelaCarros { get; set; }
         public DbSet<Pessoa> TabelaPessoa { get; set; }
+        public DbSet<Vaga> TabelaVagas { get; set; }
     }
 }
