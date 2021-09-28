@@ -1,7 +1,7 @@
+import { Pessoa } from 'src/app/models/pessoa';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from "@angular/core";
-import { Pessoa } from '../models/pessoa';
 
 
 
@@ -16,6 +16,10 @@ export class PessoaService{
 
     list(): Observable<Pessoa[]> {
         return this.http.get<Pessoa[]>(`${this.baseURL}/relacaodepessoas`)
+    }
+
+    create(pessoa : Pessoa): Observable<Pessoa> {
+        return this.http.post<Pessoa>(`${this.baseURL}/novapessoa`, pessoa);
     }
 
 }
