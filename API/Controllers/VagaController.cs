@@ -60,7 +60,7 @@ namespace API.Controllers
         {
             Vaga vaga = _context.TabelaVagas.FirstOrDefault
             (
-                vaga => vaga.Id == id
+                vaga => vaga.VagaId == id
             );
             _context.TabelaVagas.Remove(vaga);
             _context.SaveChanges();
