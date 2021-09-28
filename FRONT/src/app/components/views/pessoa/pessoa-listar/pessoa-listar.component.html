@@ -1,9 +1,9 @@
 <ol>
     <li *ngFor="let pessoa of relacaodepessoa">
-     
-        {{"Nome: " + pessoa.nome }}
+        {{"Id: " + pessoa.pessoaId }}
         {{"Cpf: " + pessoa.cpf }}
         {{"Telefone: " + pessoa.telefone }}
+        <a routerLink = "{{pessoa.pessoaId }}">Excluir</a>
 
     </li>
 </ol>
