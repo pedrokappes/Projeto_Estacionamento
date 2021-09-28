@@ -21,7 +21,7 @@ namespace API.Controllers
         [HttpPost]
         [Route("novapessoa")]
         public Pessoa NovaPessoa (Pessoa pessoa){
-            _context.TabelaPessoa.Add(pessoa);
+            _context.TabelaPessoas.Add(pessoa);
             _context.SaveChanges();
             return pessoa;
         }
@@ -30,7 +30,7 @@ namespace API.Controllers
         [HttpGet]
         [Route("relacaodepessoas")]
         public List<Pessoa> relacaodepessoas(){
-            return (_context.TabelaPessoa.ToList());
+            return (_context.TabelaPessoas.ToList());
         }
 
         //Buscar - realizar buscar de pessoas por ID
@@ -38,7 +38,7 @@ namespace API.Controllers
         [Route("buscarporpessoaid/{id}")]
         public IActionResult buscarporpessoaid([FromRoute]int id)
         {
-            Pessoa pessoa = _context.TabelaPessoa.Find(id);
+            Pessoa pessoa = _context.TabelaPessoas.Find(id);
             return Ok(pessoa);
         }
 
@@ -47,7 +47,7 @@ namespace API.Controllers
         [Route("bucasrporcpf/{cpf}")]
         public IActionResult bucasrporcpf([FromRoute]string cpf)
         {
-            Pessoa pessoa = _context.TabelaPessoa.Single(pessoa => pessoa.Cpf == cpf);
+            Pessoa pessoa = _context.TabelaPessoas.Single(pessoa => pessoa.Cpf == cpf);
             return Ok(pessoa);          
         }
         
@@ -56,7 +56,7 @@ namespace API.Controllers
         [Route("atualizarporpessoaid")]
         public IActionResult atualizarporpessoaid([FromBody] Pessoa pessoa)
         {
-            _context.TabelaPessoa.Update(pessoa);
+            _context.TabelaPessoas.Update(pessoa);
             _context.SaveChanges();
             return Ok(pessoa);
         }
@@ -66,11 +66,11 @@ namespace API.Controllers
         [Route("removerporpessoaid/{id}")]
         public IActionResult removerporpessoaid ([FromRoute]int id)
         {
-            Pessoa pessoa = _context.TabelaPessoa.FirstOrDefault
+            Pessoa pessoa = _context.TabelaPessoas.FirstOrDefault
             (
                 pessoa => pessoa.PessoaId == id
             );
-            _context.TabelaPessoa.Remove(pessoa);
+            _context.TabelaPessoas.Remove(pessoa);
             _context.SaveChanges();
             return Ok(pessoa);
         }
@@ -80,11 +80,11 @@ namespace API.Controllers
         [Route("removerporpessoacpf/{cpf}")]
         public IActionResult removerporpessoacpf ([FromRoute]string cpf)
         {
-            Pessoa pessoa = _context.TabelaPessoa.FirstOrDefault
+            Pessoa pessoa = _context.TabelaPessoas.FirstOrDefault
             (
                 pessoa => pessoa.Cpf == cpf
             );
-            _context.TabelaPessoa.Remove(pessoa);
+            _context.TabelaPessoas.Remove(pessoa);
             _context.SaveChanges();
             return Ok(pessoa);
         }

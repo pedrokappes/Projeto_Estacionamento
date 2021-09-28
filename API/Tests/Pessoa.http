@@ -1,9 +1,9 @@
-###Create - criar
+###Create - Cadastrar
 POST https://localhost:5001/api/pessoa/novapessoa
 Content-Type: application/json
 
 {
-    "Nome" : "Adriano",
+    "Nome" : "Pedro",
     "Cpf" : "1903478",
     "Telefone" : "555666321"
 }

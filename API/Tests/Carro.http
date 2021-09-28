@@ -1,5 +1,5 @@
 
-### Create - Criar
+### Create - Cadastrar
 POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
