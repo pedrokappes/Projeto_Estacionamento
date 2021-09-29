@@ -17,4 +17,8 @@ export class VagaService{
         return this.http.get<Vaga[]>(`${this.baseURL}/relacaodevagas`)
     }
 
+    create(vaga : Vaga): Observable<Vaga> {
+        return this.http.post<Vaga>(`${this.baseURL}/novavaga`, vaga);
+    }
+
 }
