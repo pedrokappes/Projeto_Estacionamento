@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Carro } from 'src/app/models/carro';
+import { CarroService } from 'src/app/services/carro.service';
 
 @Component({
   selector: 'app-cadastrar-carro',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarCarroComponent implements OnInit {
 
-  constructor() { }
+    modelo!: string;
+    placa!: string;
+    cor!: string;
 
-  ngOnInit(): void {
-  }
+
+  constructor(private router: Router, private service : CarroService) { }
+
+  ngOnInit(): void {}
+
+  casdastrarCarro(): void {
+   
+
+    let carro: Carro = {
+        modelo: this.modelo,
+        placa: this.placa,
+        cor: this.cor
+    };
+    this.service.create(carro).subscribe((carro) => {
+        console.log(carro);
+        alert('Cadastro realizado com sucesso!!!');
+        this.router.navigate(["produto/listar"]);
+    });
+
+    
+}
 
 }

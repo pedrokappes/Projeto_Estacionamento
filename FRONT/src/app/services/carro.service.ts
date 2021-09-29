@@ -15,5 +15,13 @@ export class CarroService {
     list(): Observable<Carro[]> {
         return this.http.get<Carro[]>(`${this.baseURL}/relacaodecarros`);
     }
+
+    create(carro: Carro): Observable<Carro> {
+        return this.http.post<Carro>(`${this.baseURL}/entradadecarro`, carro);
+    }
+
+    // buscar(placa : string){
+    //     return this.http.post<string>(`${this.baseURL}/bucasrporplaca`, placa);
+    // }
    
 }
