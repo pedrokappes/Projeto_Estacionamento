@@ -8,6 +8,7 @@ import { ListarCarroComponent } from './components/views/carro/listar-carro/list
 import { CadastrarCarroComponent } from './components/views/carro/cadastrar-carro/cadastrar-carro.component';
 import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/pessoa-listar.component';
 import { VagaListarComponent } from './components/views/vaga/vaga-listar/varga-listar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -15,12 +16,15 @@ import { VagaListarComponent } from './components/views/vaga/vaga-listar/varga-l
         ListarCarroComponent,
         CadastrarCarroComponent,
         PessoaListarComponent,
-        VagaListarComponent
+        VagaListarComponent,
+        
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
+
     ],
     providers: [],
     bootstrap: [AppComponent]
