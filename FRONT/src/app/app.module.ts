@@ -7,8 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListarCarroComponent } from './components/views/carro/listar-carro/listar-carro.component';
 import { CadastrarCarroComponent } from './components/views/carro/cadastrar-carro/cadastrar-carro.component';
 import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/pessoa-listar.component';
-import { VagaListarComponent } from './components/views/vaga/vaga-listar/varga-listar.component';
+import { VagaListarComponent } from './components/views/vaga/vaga-listar/vaga-listar.component';
 import { FormsModule } from '@angular/forms';
+import { CadastrarPessoaComponent } from './components/views/pessoa/cadastrar-pessoa/cadastrar-pessoa.component';
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
         ListarCarroComponent,
         CadastrarCarroComponent,
         PessoaListarComponent,
+        CadastrarPessoaComponent,
         VagaListarComponent,
         
     ],

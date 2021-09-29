@@ -4,7 +4,6 @@ import { Injectable } from "@angular/core";
 import { Vaga } from '../models/vaga';
 
 
-
 @Injectable({
     providedIn: 'root'
 })
