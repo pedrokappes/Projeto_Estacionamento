@@ -10,6 +10,7 @@ import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/p
 import { VagaListarComponent } from './components/views/vaga/vaga-listar/vaga-listar.component';
 import { FormsModule } from '@angular/forms';
 import { CadastrarPessoaComponent } from './components/views/pessoa/cadastrar-pessoa/cadastrar-pessoa.component';
+import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/cadastrar-vaga.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,7 @@ import { CadastrarPessoaComponent } from './components/views/pessoa/cadastrar-pe
         PessoaListarComponent,
         CadastrarPessoaComponent,
         VagaListarComponent,
-        
+        CadastrarVagaComponent
     ],
     imports: [
         BrowserModule,
