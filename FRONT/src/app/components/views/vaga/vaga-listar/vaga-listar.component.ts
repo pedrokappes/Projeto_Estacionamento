@@ -11,7 +11,7 @@ export class VagaListarComponent implements OnInit {
 
     relacaodevaga: Vaga[] = [];
     constructor(private service: VagaService) {}
-    
+
     ngOnInit(): void {
         this.service.list().subscribe(relacaodevaga => {
             this.relacaodevaga = relacaodevaga;
