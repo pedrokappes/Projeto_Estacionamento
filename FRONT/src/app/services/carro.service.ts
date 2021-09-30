@@ -20,8 +20,16 @@ export class CarroService {
         return this.http.post<Carro>(`${this.baseURL}/entradadecarro`, carro);
     }
 
-    // buscar(placa : string){
-    //     return this.http.post<string>(`${this.baseURL}/bucasrporplaca`, placa);
-    // }
-   
+    atualizar(carro: Carro): Observable<Carro> {
+        console.log("aqui");
+        console.log(carro);
+        return this.http.post<Carro>(`${this.baseURL}/atualizarporcarroid`, carro);
+    }
+
+    buscar(placa: string): Observable<Carro> {
+        return this.http.get<Carro>(`${this.baseURL}/bucasrporplaca/${placa}`);
+    }
+    excluir(placa: string): Observable<Carro> {
+        return this.http.delete<Carro>(`${this.baseURL}/removerporcarroplaca/${placa}`);
+    }
 }

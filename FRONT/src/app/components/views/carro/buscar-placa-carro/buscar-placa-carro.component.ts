@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { stringify } from 'querystring';
+import { Carro } from 'src/app/models/carro';
+import { CarroService } from 'src/app/services/carro.service';
 
 @Component({
   selector: 'app-buscar-placa-carro',
@@ -9,21 +10,18 @@ import { stringify } from 'querystring';
 })
 export class BuscarPlacaCarroComponent implements OnInit {
 
-    // placa! : string;
-
-  constructor() { }
+    carroBuscado! : Carro;
+    placa! : string;
+  constructor(private router: Router, private service : CarroService) { }
 
   ngOnInit(): void {
   }
 
-//   consultaCarro(): void {
-
-//     // placa : this.placa;
-
-//     // alert(this.placa);
-//     // console.log(this.placa);
-    
-//   }
+  buscar(): void {
+    this.service.buscar(this.placa).subscribe(carro => {
+        this.carroBuscado = carro;    
+    });
+}
   
 
 }

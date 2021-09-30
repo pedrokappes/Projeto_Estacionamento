@@ -1,6 +1,18 @@
-<!-- <div id="placa">
-    <label for="placa">Informe a placa que deseja consultar:</label>
+
+
+<div id="placa">
+    <label for="placa">Informe a placa:</label>
     <input type="text" name="placa" [(ngModel)]= "placa"/>
 </div>
-
-<button (click)="consultaCarro()">Enviar</button> -->
+<button (click)="buscar()">Enviar</button><br><br>
+<ol>
+    <li ngFor="carroBuscado">     
+        {{"Modelo: " + carroBuscado.modelo }}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Placa: " + carroBuscado.placa}}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Cor: " + carroBuscado.cor }}
+    </li>
+</ol>
