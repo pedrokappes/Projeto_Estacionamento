@@ -12,6 +12,8 @@ import { AtualizarCarroComponent } from './components/views/carro/atualizar-carr
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
+import { BuscarVagaComponent } from './components/views/vaga/buscar-vaga/buscar-vaga.component';
+import { ExcluirVagaComponent } from './components/views/vaga/excluir-vaga/excluir-vaga.component';
 
 const routes: Routes = [
        {
@@ -61,6 +63,14 @@ const routes: Routes = [
     {
         path: "pessoa/atualizar",
         component: AtualizarPessoaComponent
+    },
+    {
+        path: "vaga/buscar",
+        component: BuscarVagaComponent,
+    },
+    {
+        path: "vaga/deletar",
+        component: ExcluirVagaComponent,
     },
     
     
