@@ -29,7 +29,6 @@ export class CadastrarVagaComponent implements OnInit {
     this.service.create(vaga).subscribe((vaga) => {
         console.log(vaga);
         alert('Cadastro realizado com sucesso!!!');
-        this.router.navigate(["vaga/listar"]); 
     });
     
     
