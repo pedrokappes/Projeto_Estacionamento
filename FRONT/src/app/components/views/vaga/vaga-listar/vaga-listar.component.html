@@ -2,15 +2,15 @@
     <li *ngFor="let vaga of relacaodevaga">
 
         {{"Vaga: " + vaga.vagaId }}
-        {{"Status: "}}
+        {{"Status: " }}
         <ng-container [ngSwitch]="vaga.status">
-            <ng-container *jrSwitchCases="0">Livre</ng-container>
+            <ng-container *ngSwitchCase="0">Livre</ng-container>
             <ng-container *ngSwitchCase="1">Ocupada</ng-container>
             <ng-container *ngSwitchDefault>Livre</ng-container>
         </ng-container>
         {{"Tipo: "}}
         <ng-container [ngSwitch]="vaga.tipo">
-            <ng-container *jrSwitchCases="1">Moto</ng-container>
+            <ng-container *ngSwitchCase="1">Moto</ng-container>
             <ng-container *ngSwitchCase="2">Carro</ng-container>
             <ng-container *ngSwitchDefault>Carro</ng-container>
         </ng-container>
