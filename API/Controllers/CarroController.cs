@@ -4,18 +4,15 @@ using API.Data;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
 
+namespace API.Controllers {
 
-namespace API.Controllers
-{
     [ApiController]
     [Route("api/carro")]
-    public class CarroController : ControllerBase
-    {
-
+    public class CarroController : ControllerBase {
+        
         private readonly Banco _context;
 
-        public CarroController( Banco context)
-        {
+        public CarroController( Banco context) {
             _context = context;
         }
 
@@ -23,81 +20,94 @@ namespace API.Controllers
         //Create - Adicionar entrada de Carros
         [HttpPost]
         [Route("entradadecarro")]
-        public Carro EntradaDeCarro(Carro carro)
-        {     
+        public IActionResult Create([FromBody] Carro carro) {
+
             _context.TabelaCarros.Add(carro);
             _context.SaveChanges();
-            return carro;
+            return Created("", carro);
         }
         
 
         //Read - Listar relação de carros
         [HttpGet]
         [Route("relacaodecarros")]
-        public List<Carro> relacaodecarros()
-        {
-            return (_context.TabelaCarros.ToList());
-        }
+        public IActionResult List() => Ok(_context.TabelaCarros.ToList());
 
 
-        //Buscar - realizar buscar de carros por ID
+        //Buscar - realizar buscar de carros por Id
         [HttpGet]
         [Route("buscarporcarroid/{id}")]
-        public IActionResult buscarporcarroid([FromRoute]int id)
-        {
+        public IActionResult buscarporcarroid([FromRoute]int id) {
             Carro carro = _context.TabelaCarros.Find(id);
+            
+            if(carro == null) {
+                return NotFound();
+            }
+
             return Ok(carro);
         }
+
 
         //Buscar - realizar buscar de carros pela placa
         [HttpGet]
         [Route("bucasrporplaca/{placa}")]
-        public IActionResult bucasrporplaca([FromRoute]string placa)
-        {
-            Carro carro = _context.TabelaCarros.Single(carro => carro.Placa == placa);
+        public IActionResult bucasrporplaca([FromRoute]string placa) {
+            Carro carro = _context.TabelaCarros.Single(carro => carro.Placa == placa);            
+            
+            if(carro == null) {
+                return NotFound();
+            }
+
             return Ok(carro);          
         }
 
-        
 
-        //Upgrade - Atualizar informações dos carros listados por ID
+        //Upgrade - Atualizar informações dos carros listados por Id
         [HttpPut]
         [Route("atualizarporcarroid")]
-        public IActionResult atualizarporcarroid([FromBody] Carro carro)
-        {
+        public IActionResult atualizarporcarroid([FromBody] Carro carro) {
+
             _context.TabelaCarros.Update(carro);
             _context.SaveChanges();
             return Ok(carro);
         }
 
 
-        //Delete - Excluir carros por ID
+        //Delete - Excluir carros por Id
         [HttpDelete]
         [Route("removerporcarroid/{id}")]
-        public IActionResult removerporcarroid([FromRoute]int id)
-        {
-            Carro carro = _context.TabelaCarros.FirstOrDefault
-            (
+        public IActionResult removerporcarroid([FromRoute]int id) {
+
+            Carro carro = _context.TabelaCarros.FirstOrDefault (
                 carro => carro.CarroId == id
             );
+            
+            if (carro == null) {
+                return NotFound();
+            }
             _context.TabelaCarros.Remove(carro);
             _context.SaveChanges();
             return Ok(carro);
         }
 
-        //Delete - Excluir carros por PLACA
+
+        //Delete - Excluir carros por placa
         [HttpDelete]
         [Route("removerporcarroplaca/{placa}")]
-        public IActionResult removerporcarroplaca([FromRoute]string placa)
-        {
-            Carro carro = _context.TabelaCarros.FirstOrDefault
-            (
+        public IActionResult removerporcarroplaca([FromRoute]string placa) {
+
+            Carro carro = _context.TabelaCarros.FirstOrDefault (
                 carro => carro.Placa == placa
             );
+
+            if (carro == null) {
+                return NotFound();
+            }
+
             _context.TabelaCarros.Remove(carro);
             _context.SaveChanges();
             return Ok(carro);
+            
         }
-
     }
 }
