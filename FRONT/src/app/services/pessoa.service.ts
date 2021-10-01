@@ -22,4 +22,12 @@ export class PessoaService{
         return this.http.post<Pessoa>(`${this.baseURL}/novapessoa`, pessoa);
     }
 
+    excluir(cpf: string): Observable<Pessoa> {
+        return this.http.delete<Pessoa>(`${this.baseURL}/removerporpessoacpf/${cpf}`);
+    }
+
+    buscar(cpf: string): Observable<Pessoa> {
+        return this.http.get<Pessoa>(`${this.baseURL}/bucasrporcpf/${cpf}`);
+    }
+
 }
