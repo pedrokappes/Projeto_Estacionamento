@@ -30,7 +30,6 @@ export class CadastrarCarroComponent implements OnInit {
     this.service.create(carro).subscribe((carro) => {
         console.log(carro);
         alert('Cadastro realizado com sucesso!!!');
-        this.router.navigate(["produto/listar"]);
     });
 
     

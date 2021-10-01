@@ -26,7 +26,6 @@ import { AtualizarCarroComponent } from './components/views/carro/atualizar-carr
         CadastrarVagaComponent,
         BuscarPlacaCarroComponent,
         ExcluirCarroIDComponent,
-        ExcluirCarroIDComponent,
         AtualizarCarroComponent
     ],
     imports: [

@@ -21,9 +21,7 @@ export class CarroService {
     }
 
     atualizar(carro: Carro): Observable<Carro> {
-        console.log("aqui");
-        console.log(carro);
-        return this.http.post<Carro>(`${this.baseURL}/atualizarporcarroid`, carro);
+        return this.http.put<Carro>(`${this.baseURL}/atualizarporcarroid`, carro);
     }
 
     buscar(placa: string): Observable<Carro> {
