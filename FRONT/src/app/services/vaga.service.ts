@@ -20,14 +20,6 @@ export class VagaService{
     create(vaga : Vaga): Observable<Vaga> {
         return this.http.post<Vaga>(`${this.baseURL}/novavaga`, vaga);
     }
-
-    atualizar(vaga: Vaga): Observable<Vaga> {
-        console.log("aqui");
-        console.log(vaga);
-        return this.http.post<Vaga>(`${this.baseURL}/atualizarporvagaid`, vaga);
-
-    }
-
     buscar(vagaId: number): Observable<Vaga> {
         return this.http.get<Vaga>(`${this.baseURL}/buscarporvagaid/${vagaId}`);
     }
@@ -35,5 +27,6 @@ export class VagaService{
     excluir(vagaId: Int32Array): Observable<Vaga> {
         return this.http.delete<Vaga>(`${this.baseURL}/removerporvagaid/${vagaId}`);
     }
+    
 
 }
