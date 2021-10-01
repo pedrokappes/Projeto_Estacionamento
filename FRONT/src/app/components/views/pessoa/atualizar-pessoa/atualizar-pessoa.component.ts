@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Pessoa } from 'src/app/models/pessoa';
+import { PessoaService } from 'src/app/services/pessoa.service';
 
 @Component({
   selector: 'app-atualizar-pessoa',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtualizarPessoaComponent implements OnInit {
 
-  constructor() { }
+    pessoaId!: number;
+    nome!: string;
+    cpf!: string;
+    telefone!: string;
+
+  constructor(private router: Router, private service : PessoaService) { }
 
   ngOnInit(): void {
   }
 
+  atualizarCliente(): void {
+   
+    let pessoa: Pessoa = {
+        pessoaId: this.pessoaId,
+        nome: this.nome,
+        cpf: this.cpf,
+        telefone: this.telefone
+    };
+    this.service.atualizar(pessoa).subscribe();
+    console.log(pessoa);
+    
+
+}
 }
