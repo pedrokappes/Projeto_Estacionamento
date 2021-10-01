@@ -10,17 +10,13 @@ import { PessoaService } from 'src/app/services/pessoa.service';
 })
 export class PessoaExcluirComponent implements OnInit {
 
-    nome! : string;
     cpf! : string;
-    telefone! : string;
-
     constructor(private router: Router, private service: PessoaService ) { }
     
     ngOnInit(): void {
     }
 
-
-
-
-
+    excluir(): void{
+        this.service.excluir(this.cpf).subscribe();
+    }
 }

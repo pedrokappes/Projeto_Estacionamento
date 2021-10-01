@@ -14,6 +14,8 @@ import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/c
 import { BuscarPlacaCarroComponent } from './components/views/carro/buscar-placa-carro/buscar-placa-carro.component';
 import { ExcluirCarroIDComponent } from './components/views/carro/excluir-carro-id/excluir-carro-id.component';
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
+import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
+import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +28,9 @@ import { AtualizarCarroComponent } from './components/views/carro/atualizar-carr
         CadastrarVagaComponent,
         BuscarPlacaCarroComponent,
         ExcluirCarroIDComponent,
-        AtualizarCarroComponent
+        AtualizarCarroComponent,
+        BuscarPessoaComponent,
+        PessoaExcluirComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,17 @@
+<div id="cpf">
+    <label for="cpf">Informe o cpf:</label>
+    <input type="text" name="cpf" [(ngModel)]= "cpf"/>
+</div>
+<button (click)="buscar()">Enviar</button><br><br>
+<ol>
+    <li ngFor="carroBuscado">     
+        {{"Cpf: " + pessoaBuscada.cpf }}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Nome: " + pessoaBuscada.nome}}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Telefone: " + pessoaBuscada.telefone }}
+    </li>
+</ol>
+

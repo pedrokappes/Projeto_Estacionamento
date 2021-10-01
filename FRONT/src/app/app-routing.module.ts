@@ -9,6 +9,8 @@ import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/c
 import { BuscarPlacaCarroComponent } from './components/views/carro/buscar-placa-carro/buscar-placa-carro.component';
 import { ExcluirCarroIDComponent } from './components/views/carro/excluir-carro-id/excluir-carro-id.component';
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
+import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
+import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 
 const routes: Routes = [
        {
@@ -46,7 +48,17 @@ const routes: Routes = [
     {
         path: "vaga/cadastrar",
         component: CadastrarVagaComponent,
-    }
+    },
+    {
+        path: "pessoa/excluir",
+        component: PessoaExcluirComponent
+    },
+    {
+        path: "pessoa/buscar",
+        component: BuscarPessoaComponent
+    },
+    
+    
 ];
 
 @NgModule({
