@@ -14,7 +14,7 @@ export class AtualizarCarroComponent implements OnInit {
     modelo!: string;
     placa!: string;
     cor!: string;
-
+    
   constructor(private router: Router, private service : CarroService) { }
 
   ngOnInit(): void {
@@ -22,14 +22,13 @@ export class AtualizarCarroComponent implements OnInit {
 
   atualizarCarro(): void {
    
-
     let carro: Carro = {
-        carroId: this.carroId,
+        carroId: 4,
         modelo: this.modelo,
         placa: this.placa,
         cor: this.cor
     };
-    this.service.atualizar(carro);
+    this.service.atualizar(carro).subscribe();
     console.log(carro);
     
 }
