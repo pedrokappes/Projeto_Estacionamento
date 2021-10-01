@@ -21,6 +21,9 @@ export class PessoaService{
     create(pessoa : Pessoa): Observable<Pessoa> {
         return this.http.post<Pessoa>(`${this.baseURL}/novapessoa`, pessoa);
     }
+    atualizar(pessoa: Pessoa): Observable<Pessoa> {
+        return this.http.put<Pessoa>(`${this.baseURL}/atualizarporpessoaid`, pessoa);
+    }
 
     excluir(cpf: string): Observable<Pessoa> {
         return this.http.delete<Pessoa>(`${this.baseURL}/removerporpessoacpf/${cpf}`);

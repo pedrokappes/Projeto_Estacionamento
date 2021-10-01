@@ -16,6 +16,7 @@ import { ExcluirCarroIDComponent } from './components/views/carro/excluir-carro-
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
+import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir
         ExcluirCarroIDComponent,
         AtualizarCarroComponent,
         BuscarPessoaComponent,
-        PessoaExcluirComponent
+        PessoaExcluirComponent,
+        AtualizarPessoaComponent
     ],
     imports: [
         BrowserModule,

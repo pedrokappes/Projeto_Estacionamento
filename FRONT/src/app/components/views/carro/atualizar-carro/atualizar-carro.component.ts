@@ -23,7 +23,7 @@ export class AtualizarCarroComponent implements OnInit {
   atualizarCarro(): void {
    
     let carro: Carro = {
-        carroId: 4,
+        carroId: this.carroId,
         modelo: this.modelo,
         placa: this.placa,
         cor: this.cor
