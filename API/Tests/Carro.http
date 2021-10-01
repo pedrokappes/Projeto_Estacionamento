@@ -5,7 +5,7 @@ Content-Type: application/json
 
 {
     "Modelo" : "Carro do maicon",
-    "Placa" : "xxx-123",
+    "Placa" : "bbc-666",
     "Cor" : "Roxo" 
 }
 
