@@ -1,18 +1,24 @@
-<div id="status">
-    <label for="tipo">Status:</label>
-    <input type="radio" name="1" id="1" class="with-gap" [(ngModel)]="status" [value]="false"> Livre
-    <input type="radio" name="2" id="2" class="with-gap" [(ngModel)]="status" [value]="true" > Ocupada
-</div>
+<section>
+    <div id="esquerda"></div>
+    <div id="meio">
+        <h1> Cadastro de vaga</h1>
+        <div id="status">
+            <label for="tipo">Status:</label><br>
+            <input type="radio" name="1" id="1" class="with-gap" [(ngModel)]="status" [value]="false"> Livre
+            <input type="radio" name="2" id="2" class="with-gap" [(ngModel)]="status" [value]="true"> Ocupada
+        </div>
 
-<div id="tipo">
-    <label for="tipo">Tipo:</label>
-    <input type="radio" name="3" id="3" class="with-gap" [(ngModel)]="tipo" [value]="1"> Moto
-    <input type="radio" name="4" id="4" class="with-gap" [(ngModel)]="tipo" [value]="2" > Carro
-</div>
+        <div id="tipo">
+            <label for="tipo">Tipo:</label><br>
+            <input type="radio" name="3" id="3" class="with-gap" [(ngModel)]="tipo" [value]="1"> Moto
+            <input type="radio" name="4" id="4" class="with-gap" [(ngModel)]="tipo" [value]="2"> Carro
+        </div>
 
-<div>
-    <p>
-        <button (click)="casdastrarVaga()">Enviar</button>
-    </p>
-</div>
-
+        <div>
+            <p>
+                <button (click)="casdastrarVaga()">CADASTRAR</button>
+            </p>
+        </div>
+    </div>
+    <div id="direita"></div>
+</section>

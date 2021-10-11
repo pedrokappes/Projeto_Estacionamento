@@ -9,7 +9,7 @@ import { VagaService } from './services/vaga.service';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    //css alterar para stylesurl quando for criado uma pagina exclusiva
+    styleUrls: ['./app.component.css'],
     styles: []
 })
 

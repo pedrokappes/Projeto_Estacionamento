@@ -1,17 +1,45 @@
-<div id="cpf">
-    <label for="cpf">Informe o cpf:</label>
-    <input type="text" name="cpf" [(ngModel)]= "cpf"/>
-</div>
-<button (click)="buscar()">Enviar</button><br><br>
-<ol>
-    <li ngFor="carroBuscado">     
-        {{"Cpf: " + pessoaBuscada.cpf }}
-    </li>
-    <li ngFor="carroBuscado">     
-        {{"Nome: " + pessoaBuscada.nome}}
-    </li>
-    <li ngFor="carroBuscado">     
-        {{"Telefone: " + pessoaBuscada.telefone }}
-    </li>
-</ol>
 
+<section>
+    <div id="esquerda"></div>
+    <div id="meio">      
+        <h1> Buscar pessoa</h1>
+        
+        <div id="cpf">
+            <label for="cpf">Informe o CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite a cpf:" [(ngModel)]="cpf" />
+        </div>
+        <button (click)="buscar()">BUSCAR</button><br><br>
+        
+        <table>
+            <thead>
+                <th>
+                    <a> CPF </a>
+                </th>
+                <th>
+                    <a> NOME </a>
+                </th>
+                <th>
+                    <a> TELEFONE </a>
+                </th>
+            </thead>
+
+            <tbody ngFor="pessoaBuscada">
+                <tr>
+                    <td>
+                        {{pessoaBuscada.cpf }}
+                    </td>
+                    <td>
+                        {{pessoaBuscada.nome}}
+                    </td>
+                    <td>
+
+                        {{pessoaBuscada.telefone }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+    </div>
+    <div id="direita"></div>
+</section>

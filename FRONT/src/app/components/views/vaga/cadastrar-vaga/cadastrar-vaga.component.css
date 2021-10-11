@@ -1,0 +1,25 @@
+button{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    background-color: orange;
+}
+#status{
+    padding-left: 10px;
+}
+#tipo{
+    padding-left: 10px;
+}
+section{
+    display: flex;
+}
+#esquerda{
+    flex: 1;
+}
+#meio{
+    padding-top: 50px;
+    flex: 2;
+}
+#direita{
+    flex: 1;
+}

@@ -1,22 +1,31 @@
+<section>
+    <div id="esquerda"></div>
+    <div id="meio">
+        <h1> Atualizar carro</h1>
+
 <div id="carroId">
     <label for="carroId">ID:</label>
-    <input type="number" name="carroId" [(ngModel)]= "carroId" />
+    <input type="number" name="carroId" placeholder="Informe o ID:" [(ngModel)]= "carroId" />
 </div>
 
 <div id="modelo">
     <label for="modelo">modelo:</label>
-    <input type="text" name="modelo" [(ngModel)]= "modelo" />
+    <input type="text" name="modelo" placeholder="Informe o modelo atualizado:" [(ngModel)]= "modelo" />
 </div>
 
 
 <div id="placa">
     <label for="placa">Placa:</label>
-    <input type="text" name="placa" [(ngModel)]= "placa"/>
+    <input type="text" name="placa" placeholder="Informe a placa atualizada:" [(ngModel)]= "placa"/>
 </div>
 
 <div id="cor">
     <label for="cor">Cor:</label>
-    <input type="text" name="cor" [(ngModel)]= "cor"/>
+    <input type="text" name="cor" placeholder="Informe a cor atualizada:" [(ngModel)]= "cor"/>
 </div>
 
 <button (click)="atualizarCarro()">Enviar</button>
+
+</div>
+<div id="direita"></div>
+</section>
