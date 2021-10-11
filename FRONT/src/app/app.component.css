@@ -1,0 +1,47 @@
+
+header{
+    text-align: center;
+    padding-top: 13px;
+    height: 50px;
+    size: 10px;
+    background-color: red;
+    font-size: large;
+    border: 1px solid black;
+}
+section{
+    display: flex;
+}
+nav{
+    flex: 1;
+    list-style: none;
+}
+
+article{
+    padding-top: 2px;
+    padding-left: 2px;
+    flex: 5;
+}
+li{
+    border-radius: 2px;
+}
+#li_pessoa{
+    border: 1px solid black;
+    background-color: blue;
+}
+#text_pessoa{
+    color: black;
+}
+#li_carro{
+    border: 1px solid black;
+    background-color: red;
+}
+#text_carro{
+    color: black;
+}
+#li_vaga{
+    border: 1px solid black;
+    background-color: green;
+}
+#text_vaga{
+    color: black;
+}

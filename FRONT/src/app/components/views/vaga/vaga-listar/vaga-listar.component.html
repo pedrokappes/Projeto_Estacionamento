@@ -1,18 +1,42 @@
-<ol>
-    <li *ngFor="let vaga of relacaodevaga">
+<section>
+    <div id="esquerda"></div>
+    <div id="meio">
+        <h1> Lista de vagas</h1>
+        <table>
+            <thead>
+                <th>
+                    <a> VAGA </a>
+                </th>
+                <th>
+                    <a> CPF </a>
+                </th>
+                <th>
+                    <a> TELEFONE </a>
+                </th>
+            </thead>
 
-        {{"Vaga: " + vaga.vagaId }}
-        {{"Status: " }}
-        <ng-container [ngSwitch]="vaga.status">
-            <ng-container *ngSwitchCase="0">Livre</ng-container>
-            <ng-container *ngSwitchCase="1">Ocupada</ng-container>
-            <ng-container *ngSwitchDefault>Livre</ng-container>
-        </ng-container>
-        {{"Tipo: "}}
-        <ng-container [ngSwitch]="vaga.tipo">
-            <ng-container *ngSwitchCase="1">Moto</ng-container>
-            <ng-container *ngSwitchCase="2">Carro</ng-container>
-            <ng-container *ngSwitchDefault>Carro</ng-container>
-        </ng-container>
-    </li>
-</ol>
+            <tbody *ngFor="let vaga of relacaodevaga">
+                <tr>
+                    <td>
+                        {{vaga.vagaId}}
+                    </td>
+                    <td>
+                        <ng-container [ngSwitch]="vaga.status">
+                            <ng-container *ngSwitchCase="0">Livre</ng-container>
+                            <ng-container *ngSwitchCase="1">Ocupada</ng-container>
+                            <ng-container *ngSwitchDefault>Livre</ng-container>
+                        </ng-container>
+                    </td>
+                    <td>
+                        <ng-container [ngSwitch]="vaga.tipo">
+                            <ng-container *ngSwitchCase="1">Moto</ng-container>
+                            <ng-container *ngSwitchCase="2">Carro</ng-container>
+                            <ng-container *ngSwitchDefault>Carro</ng-container>
+                        </ng-container>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="direita"></div>
+</section>

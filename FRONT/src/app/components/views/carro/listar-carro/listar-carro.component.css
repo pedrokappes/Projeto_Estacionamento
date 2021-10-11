@@ -1,0 +1,33 @@
+section{
+    display: flex;
+}
+#esquerda{
+    flex: 1;
+}
+#meio{
+    padding-top: 50px;
+    flex: 2;
+}
+#direita{
+    flex: 1;
+}
+li{
+    list-style: none;
+}
+table{
+    border: 2px solid;
+    width: 100%;
+}
+th{
+    width: 33%;
+    border: 1px solid;
+    height: 30px;
+}
+td{
+    width: 33%;
+    border: 1px solid;
+    height: 30px;
+}
+h1{
+    text-align: center;
+}

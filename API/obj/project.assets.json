@@ -740,11 +740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\api\\API.csproj",
+      "projectUniqueName": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\Projeto_Estacionamento\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\api\\API.csproj",
+      "projectPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\Projeto_Estacionamento\\api\\API.csproj",
       "packagesPath": "C:\\Users\\Maicon Lucas\\.nuget\\packages\\",
-      "outputPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\api\\obj\\",
+      "outputPath": "E:\\Aulas\\2 - Ano\\2- Semestre\\Desenvolvimento de Software\\Trabalho\\Projeto_Estacionamento\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maicon Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"

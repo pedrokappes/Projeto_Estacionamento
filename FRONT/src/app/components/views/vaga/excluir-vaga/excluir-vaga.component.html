@@ -1,5 +1,13 @@
-<div id="vagaId">
-    <label for="vagaId">Informe o Id da Vaga:</label>
-    <input type="text" name="vagaId" [(ngModel)]= "vagaId"/>
-</div>
-<button (click)="excluir()">Clique para Deletar</button><br><br>
+
+<section>
+    <div id="esquerda"></div>
+    <div id="meio">
+        <h1> Excluir vaga</h1>
+        <div id="vagaId">
+            <label for="vagaId">Informe o Id da Vaga:</label>
+            <input type="text" name="vagaId" placeholder="Informe o ID que deseja excluir:" [(ngModel)]= "vagaId"/>
+        </div>
+        <button (click)="excluir()">Clique para Deletar</button><br><br>
+    </div>
+    <div id="direita"></div>
+</section>

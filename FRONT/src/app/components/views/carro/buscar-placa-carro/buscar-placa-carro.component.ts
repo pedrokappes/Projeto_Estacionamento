@@ -20,7 +20,10 @@ export class BuscarPlacaCarroComponent implements OnInit {
   buscar(): void {
     this.service.buscar(this.placa).subscribe(carro => {
         this.carroBuscado = carro;    
+        
     });
+    this.router.navigate(["carro/buscar"]);
+    //this.router.navigate(["vaga/listar"]);
 }
   
 
