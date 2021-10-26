@@ -15,9 +15,6 @@ export class VagaListarComponent implements OnInit {
     ngOnInit(): void {
         this.service.list().subscribe(relacaodevaga => {
             this.relacaodevaga = relacaodevaga;
-            for(let vaga of relacaodevaga){
-                console.log(vaga);
-            }
         });
     }
 }
