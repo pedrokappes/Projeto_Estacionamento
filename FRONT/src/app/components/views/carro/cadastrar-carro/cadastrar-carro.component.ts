@@ -13,6 +13,7 @@ export class CadastrarCarroComponent implements OnInit {
     modelo!: string;
     placa!: string;
     cor!: string;
+    pessoaid!: number;
 
 
   constructor(private router: Router, private service : CarroService) { }
@@ -25,7 +26,8 @@ export class CadastrarCarroComponent implements OnInit {
     let carro: Carro = {
         modelo: this.modelo,
         placa: this.placa,
-        cor: this.cor
+        cor: this.cor,
+        pessoaId: this.pessoaid        
     };
     this.service.create(carro).subscribe((carro) => {
         console.log(carro);

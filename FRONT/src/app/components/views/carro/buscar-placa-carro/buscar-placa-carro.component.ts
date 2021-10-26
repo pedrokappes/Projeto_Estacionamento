@@ -22,8 +22,6 @@ export class BuscarPlacaCarroComponent implements OnInit {
         this.carroBuscado = carro;    
         
     });
-    this.router.navigate(["carro/buscar"]);
-    //this.router.navigate(["vaga/listar"]);
 }
   
 

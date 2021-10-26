@@ -15,9 +15,6 @@ export class PessoaListarComponent implements OnInit {
     ngOnInit(): void {
         this.service.list().subscribe(relacaodepessoa => {
             this.relacaodepessoa = relacaodepessoa;
-            for(let pessoa of relacaodepessoa){
-                console.log(pessoa);
-            }
         });
     }
 }

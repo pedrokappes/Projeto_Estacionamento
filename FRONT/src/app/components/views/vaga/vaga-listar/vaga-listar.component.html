@@ -8,10 +8,10 @@
                     <a> VAGA </a>
                 </th>
                 <th>
-                    <a> CPF </a>
+                    <a> STATUS </a>
                 </th>
                 <th>
-                    <a> TELEFONE </a>
+                    <a> TIPO </a>
                 </th>
             </thead>
 
@@ -21,18 +21,10 @@
                         {{vaga.vagaId}}
                     </td>
                     <td>
-                        <ng-container [ngSwitch]="vaga.status">
-                            <ng-container *ngSwitchCase="0">Livre</ng-container>
-                            <ng-container *ngSwitchCase="1">Ocupada</ng-container>
-                            <ng-container *ngSwitchDefault>Livre</ng-container>
-                        </ng-container>
+                        {{vaga.status}}
                     </td>
                     <td>
-                        <ng-container [ngSwitch]="vaga.tipo">
-                            <ng-container *ngSwitchCase="1">Moto</ng-container>
-                            <ng-container *ngSwitchCase="2">Carro</ng-container>
-                            <ng-container *ngSwitchDefault>Carro</ng-container>
-                        </ng-container>
+                        {{vaga.tipo}}
                     </td>
                 </tr>
             </tbody>
