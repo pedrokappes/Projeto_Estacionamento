@@ -11,6 +11,9 @@
         <table>
             <thead>
                 <th>
+                    <a> ID </a>
+                </th>
+                <th>
                     <a> MODELO </a>
                 </th>
                 <th>
@@ -19,10 +22,17 @@
                 <th>
                     <a> COR </a>
                 </th>
+                <th>
+                    <a> ID do dono </a>
+                </th>
+                
             </thead>
 
             <tbody ngFor="carroBuscado">
-                <tr>
+                <tr>                    
+                    <td>
+                        {{carroBuscado.carroId }}
+                    </td>
                     <td>
                         {{carroBuscado.modelo }}
                     </td>
