@@ -3,7 +3,7 @@
     <div id="meio">
         <div id="modelo">
             <h1> Cadastro de carro</h1>
-            <label for="modelo">modelo:</label>
+            <label for="modelo">Modelo:</label>
             <input type="text" name="modelo" placeholder="Informe o modelo do carro:" [(ngModel)]="modelo" />
         </div>
 
@@ -19,11 +19,11 @@
         </div>
 
         <div id="pessoaid">
-            <label for="pessoaid">Cor:</label>
-            <input type="text" name="pessoaid" placeholder="Informe o cpf do dono do carro:" [(ngModel)]="pessoaid" />
+            <label for="pessoaid">ID do propriatário:</label>
+            <input type="text" name="pessoaid" placeholder="Informe o ID do dono do carro:" [(ngModel)]="pessoaid" />
         </div>
 
-        <button (click)="casdastrarCarro()">Enviar</button>
+        <button (click)="casdastrarCarro()">Cadastro</button>
     </div>
     <div id="direita"></div>
 </section>

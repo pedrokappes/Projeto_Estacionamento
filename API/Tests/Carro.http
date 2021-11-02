@@ -7,7 +7,7 @@ Content-Type: application/json
     "Modelo" : "Gol",
     "Placa" : "bbc-666",
     "Cor" : "Roxo", 
-    "PessoaId" : 1
+    "PessoaId" : 4
 }
 
 ### Read - Listar

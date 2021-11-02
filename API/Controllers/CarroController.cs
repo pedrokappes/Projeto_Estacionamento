@@ -87,12 +87,12 @@ namespace API.Controllers
             return lista;
         }
 
-        //Buscar - realizar buscar de carros por Id
+        //Buscar - realizar buscar de carros pela placa
         [HttpGet]
-        [Route("buscarporcarroid/{id}")]
-        public IActionResult buscarporcarroid([FromRoute] int id)
+        [Route("bucasrporplaca/{placa}")]
+        public IActionResult bucasrporplaca([FromRoute] string placa)
         {
-            Carro carro = _context.TabelaCarros.Find(id);
+            Carro carro = _context.TabelaCarros.Include(carro => carro.Pessoa).FirstOrDefault(carro => carro.Placa == placa);
 
             if (carro == null)
             {
@@ -102,13 +102,13 @@ namespace API.Controllers
             return Ok(carro);
         }
 
-
-        //Buscar - realizar buscar de carros pela placa
+        
+        //Buscar - realizar buscar de carros por Id
         [HttpGet]
-        [Route("bucasrporplaca/{placa}")]
-        public IActionResult bucasrporplaca([FromRoute] string placa)
+        [Route("buscarporcarroid/{id}")]
+        public IActionResult buscarporcarroid([FromRoute] int id)
         {
-            Carro carro = _context.TabelaCarros.Single(carro => carro.Placa == placa);
+            Carro carro = _context.TabelaCarros.Find(id);
 
             if (carro == null)
             {

@@ -30,7 +30,6 @@ export class CadastrarPessoaComponent implements OnInit {
     };
     
     this.service.create(pessoa).subscribe((pessoa) => {
-        console.log(pessoa);
         alert('Cadastro realizado com sucesso!!!');
     });
     

@@ -16,12 +16,13 @@ table{
     width: 100%;
 }
 th{
-    width: 33%;
+    text-align: center;
+    width: 20%;
     border: 1px solid;
     height: 30px;
 }
 td{
-    width: 33%;
+    width: 20%;
     border: 1px solid;
     height: 30px;
 }
