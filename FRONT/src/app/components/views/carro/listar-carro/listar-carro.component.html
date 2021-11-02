@@ -13,6 +13,9 @@
                 <th>
                     <a> COR </a>
                 </th>
+                <th>
+                    <a> COR </a>
+                </th>
             </thead>
 
             <tbody *ngFor="let carro of relacaodecarros">
@@ -26,6 +29,10 @@
                     <td>
                         {{carro.cor }}
                     </td>
+                    <td>
+                        {{carro.pessoa.cpf }}
+                    </td>
+                   
                 </tr>
             </tbody>
         </table>
