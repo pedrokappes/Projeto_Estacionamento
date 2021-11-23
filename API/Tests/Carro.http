@@ -4,9 +4,10 @@ POST https://localhost:5001/api/carro/entradadecarro
 Content-Type: application/json
 
 {
-    "Modelo" : "Carro do maicon",
+    "Modelo" : "Carro do Pedro certo",
     "Placa" : "bbc-666",
-    "Cor" : "Roxo" 
+    "Cor" : "Roxo" ,
+    "PessoaId" : 2
 }
 
 ### Read - Listar
