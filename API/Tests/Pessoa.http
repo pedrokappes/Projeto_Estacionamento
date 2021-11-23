@@ -3,7 +3,7 @@ POST https://localhost:5001/api/pessoa/novapessoa
 Content-Type: application/json
 
 {
-    "Nome" : "Marta",
+    "Nome" : "fewgerw",
     "Cpf" : "1903478",
     "Telefone" : "(41)55566-6321"
 }
