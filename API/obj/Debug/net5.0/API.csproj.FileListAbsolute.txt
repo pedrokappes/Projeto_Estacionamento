@@ -270,3 +270,37 @@ E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estaci
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\Projeto_Estacionamento\api\obj\Debug\net5.0\ref\API.dll
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\Projeto_Estacionamento\api\obj\Debug\net5.0\API.pdb
 E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\Projeto_Estacionamento\api\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.json
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.exe
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.deps.json
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.json
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.dev.json
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\ref\API.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\API.pdb
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfo.cs
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.Manifest.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\scopedcss\bundle\API.styles.css
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.RazorTargetAssemblyInfo.cache
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CopyComplete
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\ref\API.dll
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.pdb
+C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.genruntimeconfig.cache

@@ -3,9 +3,9 @@ POST https://localhost:5001/api/pessoa/novapessoa
 Content-Type: application/json
 
 {
-    "Nome" : "Pedro",
-    "Cpf" : "1903478",
-    "Telefone" : "555666321"
+    "Nome" : "Maicon",
+    "Cpf" : "111",
+    "Telefone" : "666"
 }
 
 ### Read - Listar

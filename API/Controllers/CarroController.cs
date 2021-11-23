@@ -3,6 +3,7 @@ using System.Linq;
 using API.Data;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers {
 
@@ -21,7 +22,8 @@ namespace API.Controllers {
         [HttpPost]
         [Route("entradadecarro")]
         public IActionResult Create([FromBody] Carro carro) {
-
+            int pessoaId = carro.PessoaId;
+            carro.Pessoa = _context.TabelaPessoas.Find(pessoaId);
             _context.TabelaCarros.Add(carro);
             _context.SaveChanges();
             return Created("", carro);
@@ -31,7 +33,7 @@ namespace API.Controllers {
         //Read - Listar relação de carros
         [HttpGet]
         [Route("relacaodecarros")]
-        public IActionResult List() => Ok(_context.TabelaCarros.ToList());
+        public IActionResult List() => Ok(_context.TabelaCarros.Include(Carro => Carro.Pessoa).ToList());
 
 
         //Buscar - realizar buscar de carros por Id
