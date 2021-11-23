@@ -14,4 +14,11 @@
     <input type="text" name="cor" [(ngModel)]= "cor"/>
 </div>
 
+<div id="pessoa">
+    <label for="pessoa">Dono:</label>
+    <select name="pessoa">
+        <option *ngFor="let pessoa of pessoas" value = "{{ pessoa.cpf }}"> {{ pessoa.nome }} </option>
+    </select>
+</div>
+
 <button (click)="casdastrarCarro()">Enviar</button>
