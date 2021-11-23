@@ -1,3 +1,12 @@
+###Create - criar
+POST https://localhost:5001/api/vaga/novavaga
+Content-Type: application/json
+
+{
+    "Status" : false,
+    "Tipo" : 15
+}
+
 ### Read - Listar
 GET https://localhost:5001/api/vaga/relacaodevagas
 
@@ -11,8 +20,8 @@ Content-Type: application/json
 
 {   
     "VagaId" : 2,
-    "Status" : "Ocupado",
-    "CarroId" : 1
+    "Status" : true,
+    "Tipo" : 27 
 }
 
 ### Delete - Excluir por Id

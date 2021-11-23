@@ -1,59 +1,33 @@
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     <header> CONTROLES DO ESTACIONAMENTO</header>
-    <section>
-    <nav>
-        
-            <li id="li_pessoa">
-                <a id="text_pessoa" type="button" class="nav-item nav-link active" href="/pessoa/cadastrar">Cadastro de pessoas <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_pessoa">
-                <a id="text_pessoa"  class="nav-item nav-link active" href="/pessoa/listar">Listar pessoas <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_pessoa">
-                <a id="text_pessoa" class="nav-item nav-link active" href="/pessoa/buscar">Buscar pessoa <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_pessoa">
-                <a id="text_pessoa"  class="nav-item nav-link active" href="/pessoa/atualizar">Atualizar pessoa <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_pessoa">
-                <a id="text_pessoa"  class="nav-item nav-link active" href="/pessoa/excluir">Excluir pessoa <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_carro">
-                <a id="text_carro" class="nav-item nav-link active" href="/carro/cadastrar">Cadastro de Carro <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_carro">
-                <a id="text_carro" class="nav-item nav-link active" href="/carro/listar">Listar carros <span class="sr-only">(current)</span></a>
-            </li>
-            <li  id="li_carro">
-                <a id="text_carro" class="nav-item nav-link active" href="/carro/buscar">Buscar carro <span class="sr-only">(current)</span></a>
-            </li>           
-            <li  id="li_carro">
-                <a id="text_carro" class="nav-item nav-link active" href="/carro/atualizar">Atualizar carro <span class="sr-only">(current)</span></a>
-            </li>
-            <li  id="li_carro">
-                <a id="text_carro" class="nav-item nav-link active" href="/carro/excluir">Excluir carro <span class="sr-only">(current)</span></a>
-            </li>    
-            <li id="li_vaga">
-                <a id="text_vaga" class="nav-item nav-link active" href="/vaga/listar">Listar vagas <span class="sr-only">(current)</span></a>
-            </li>
-            <li id="li_vaga">
-                <a id="text_vaga" class="nav-item nav-link active" href="/vaga/buscar">Buscar vaga <span class="sr-only">(current)</span></a>
-            </li>
-           
-    </nav>
-    <article><router-outlet></router-outlet></article>
-    </section>
+    <a class="navbar-brand" href="">Pagina inicial</a>
 
-    
+    <a href="/pessoa/cadastrar">Cadastro de pessoas </a>
+
+    <a href="/pessoa/listar">Listar pessoas </a>
+
+    <a href="/pessoa/buscar">Buscar pessoa </a>
+
+    <a href="/pessoa/atualizar">Atualizar pessoa </a>
+
+    <a href="/pessoa/excluir">Excluir pessoa </a>
+
+    <a href="/carro/cadastrar">Cadastro de Carro </a>
+
+    <a href="/carro/listar">Listar carros </a>
+
+    <a href="/carro/buscar">Buscar carro </a>
+
+    <a href="/carro/atualizar">Atualizar carro </a>
+
+    <a href="/carro/excluir">Excluir carro </a>
+
+    <a href="/vaga/cadastrar">Cadastro de Vaga </a>
+
+    <a href="/vaga/listar">Listar vagas </a>
+
+    <a href="/vaga/buscar">Buscar vaga </a>
+
+    <a href="/vaga/deletar">Excluir vaga </a>
+
+    <router-outlet></router-outlet>
 </body>
-
-
-
-
-

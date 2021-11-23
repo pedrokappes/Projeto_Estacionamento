@@ -1,34 +1,8 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Lista de pessoas</h1>
-        <table>
-            <thead>
-                <th>
-                    <a> NOME </a>
-                </th>
-                <th>
-                    <a> CPF </a>
-                </th>
-                <th>
-                    <a> TELEFONE </a>
-                </th>
-            </thead>
+<ol>
+    <li *ngFor="let pessoa of relacaodepessoa">
+        {{"Nome: " + pessoa.nome }}
+        {{"||  Cpf: " + pessoa.cpf }}
+        {{"||  Telefone: " + pessoa.telefone }}]
 
-            <tbody *ngFor="let pessoa of relacaodepessoa">
-                <tr>
-                    <td>
-                        {{pessoa.nome}}
-                    </td>
-                    <td>
-                        {{pessoa.cpf}}
-                    </td>
-                    <td>
-                        {{pessoa.telefone}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="direita"></div>
-</section>
+    </li>
+</ol>

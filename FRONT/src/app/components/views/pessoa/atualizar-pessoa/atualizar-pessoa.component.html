@@ -1,32 +1,22 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Atualizar pessoa</h1>
+<div id="pessoaId">
+    <label for="pessoaId">ID:</label>
+    <input type="number" name="pessoaId" [(ngModel)]= "pessoaId" />
+</div>
 
-        <div id="pessoaId">
-            <label for="pessoaId">ID:</label>
-            <input type="text" name="pessoaId" placeholder="Informe o ID:" [(ngModel)]="pessoaId" />
-        </div>
-
-        <div id="nome">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" placeholder="Informe o nome atualizado:" [(ngModel)]="nome" />
-        </div>
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]= "nome" />
+</div>
 
 
-        <div id="cpf">
-            <label for="cpf">Cpf:</label>
-            <input type="text" name="cpf" placeholder="Informe o CPF atuazilado:" [(ngModel)]="cpf" />
-        </div>
+<div id="cpf">
+    <label for="cpf">Cpf:</label>
+    <input type="text" name="cpf" [(ngModel)]= "cpf"/>
+</div>
 
-        <div id="telefone">
-            <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" placeholder="Informe o telfone atualizado:" [(ngModel)]="telefone" />
-        </div>
+<div id="telefone">
+    <label for="telefone">Telefone:</label>
+    <input type="text" name="telefone" [(ngModel)]= "telefone"/>
+</div>
 
-        <button (click)="atualizarCliente()">ATUALIZAR</button>
-
-
-    </div>
-    <div id="direita"></div>
-</section>
+<button (click)="atualizarCliente()">Cadastrar</button>

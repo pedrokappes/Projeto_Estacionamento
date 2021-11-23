@@ -29,7 +29,7 @@ export class AtualizarPessoaComponent implements OnInit {
         telefone: this.telefone
     };
     this.service.atualizar(pessoa).subscribe();
-    alert('Atualização realizada com sucesso!!!');
+    console.log(pessoa);
     
 
 }

@@ -1,7 +1,7 @@
 export interface Vaga {
     
     vagaId? : Int32Array;
-    status : string;
-    tipo : string;
+    status : boolean;
+    tipo : Int32Array;
     
 }

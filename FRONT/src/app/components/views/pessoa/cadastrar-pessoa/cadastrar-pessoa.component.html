@@ -1,27 +1,17 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Cadastro pessoa</h1>
-        <div id="nome">
-            <label for="nome">NOME:</label>
-            <br>
-            <input type="text" name="nome" placeholder="Digite seu nome:" [(ngModel)]="nome" />
-        </div>
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]= "nome" />
+</div>
 
 
-        <div id="cpf">
-            <label for="cpf">CPF:</label>
-            <br>
-            <input type="text" name="cpf" placeholder="Digite seu CPF:" [(ngModel)]="cpf" />
-        </div>
+<div id="cpf">
+    <label for="cpf">Cpf:</label>
+    <input type="text" name="cpf" [(ngModel)]= "cpf"/>
+</div>
 
-        <div id="telefone">
-            <label for="telefone">TELEFONE:</label>
-            <br>
-            <input type="text" name="telefone" placeholder="Informe seu telefone:" [(ngModel)]="telefone" />
-        </div>
-        <br>
-        <button (click)="casdastrarCliente()">CADASTRAR</button>
-    </div>
-    <div id="direita"></div>
-</section>
+<div id="telefone">
+    <label for="telefone">Telefone:</label>
+    <input type="text" name="telefone" [(ngModel)]= "telefone"/>
+</div>
+
+<button (click)="casdastrarCliente()">Cadastrar</button>

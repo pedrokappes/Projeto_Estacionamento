@@ -18,6 +18,5 @@ export class PessoaExcluirComponent implements OnInit {
 
     excluir(): void{
         this.service.excluir(this.cpf).subscribe();
-        alert('Realizado exclusão com sucesso!!!');
     }
 }
