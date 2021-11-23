@@ -1,12 +1,5 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Excluir carro</h1>
-        <div id="placa">
-            <label for="placa">Informe a placa:</label>
-            <input type="text" name="placa" placeholder="Informe o ID que deseja excluir:" [(ngModel)]="placa" />
-        </div>
-        <button (click)="excluir()">Enviar</button><br><br>
-    </div>
-    <div id="direita"></div>
-</section>
+<div id="placa">
+    <label for="placa">Informe a placa:</label>
+    <input type="text" name="placa" [(ngModel)]= "placa"/>
+</div>
+<button (click)="excluir()">Enviar</button><br><br>

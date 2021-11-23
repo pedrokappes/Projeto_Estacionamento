@@ -32,4 +32,5 @@ export class PessoaService{
     buscar(cpf: string): Observable<Pessoa> {
         return this.http.get<Pessoa>(`${this.baseURL}/bucasrporcpf/${cpf}`);
     }
+
 }

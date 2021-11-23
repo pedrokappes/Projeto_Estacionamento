@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Carro } from '../models/carro';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { Pessoa } from '../models/pessoa';
 
 @Injectable({
     providedIn: 'root'
@@ -31,8 +30,4 @@ export class CarroService {
     excluir(placa: string): Observable<Carro> {
         return this.http.delete<Carro>(`${this.baseURL}/removerporcarroplaca/${placa}`);
     }
-    buscarID(pessoaID: number): Observable<Pessoa> {
-        return this.http.get<Pessoa>(`${this.baseURL}/buscarporpessoaid/${pessoaID}`);
-    }
-
 }

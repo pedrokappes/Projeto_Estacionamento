@@ -1,38 +1,9 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Lista de carros</h1>
-        <table>
-            <thead>
-                <th>
-                    <a> MODELO </a>
-                </th>
-                <th>
-                    <a> PLACA </a>
-                </th>
-                <th>
-                    <a> COR </a>
-                </th>
-                <th>
-                    <a> COR </a>
-                </th>
-            </thead>
 
-            <tbody *ngFor="let carro of relacaodecarros">
-                <tr>
-                    <td>
-                        {{carro.modelo }}
-                    </td>
-                    <td>
-                        {{carro.placa}}
-                    </td>
-                    <td>
-                        {{carro.cor }}
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="direita"></div>
-</section>
+<ol>
+    <li *ngFor="let carro of relacaodecarros">
+     
+        {{"Modelo: " + carro.modelo }}
+        {{"Placa: " + carro.placa}}
+        {{"Cor: " + carro.cor }}
+    </li>
+</ol>

@@ -1,50 +1,16 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Buscar vaga</h1>
-
-        <div id="vagaId">
-            <label for="vagaId">Informe o Id da Vaga:</label>
-            <input type="text" name="vagaId" placeholder="Digite a ID:" [(ngModel)]="vagaId" />
-        </div>
-        <button (click)="buscar()">Enviar</button><br><br>
-
-        <table>
-            <thead>
-                <th>
-                    <a> ID </a>
-                </th>
-                <th>
-                    <a> STATUS </a>
-                </th>
-                <th>
-                    <a> TIPO </a>
-                </th>
-            </thead>
-
-            <tbody ngFor="vagaBuscada">
-                <tr>
-                    <td>
-                        {{vagaBuscada.vagaId }}
-                    </td>
-                    <td>
-                        <ng-container [ngSwitch]="vagaBuscada.status">
-                            <ng-container *ngSwitchCase="0">Livre</ng-container>
-                            <ng-container *ngSwitchCase="1">Ocupada</ng-container>
-                            <ng-container *ngSwitchDefault>Livre</ng-container>
-                        </ng-container>
-                    </td>
-                    <td>
-                        <ng-container [ngSwitch]="vagaBuscada.tipo">
-                            <ng-container *ngSwitchCase="1">Moto</ng-container>
-                            <ng-container *ngSwitchCase="2">Carro</ng-container>
-                            <ng-container *ngSwitchDefault>Carro</ng-container>
-                        </ng-container>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-    </div>
-    <div id="direita"></div>
-</section>
+<div id="vagaId">
+    <label for="vagaId">Informe o Id da Vaga:</label>
+    <input type="text" name="vagaId" [(ngModel)]= "vagaId"/>
+</div>
+<button (click)="buscar()">Enviar</button><br><br>
+<ol>
+    <li ngFor="vagaBuscada">     
+        {{"Id Vaga: " + vagaBuscada.vagaId }}
+    </li>
+    <li ngFor="vagaBuscada">     
+        {{"Status: " + vagaBuscada.status }}
+    </li>
+    <li ngFor="vagaBuscada">     
+        {{"Tipo: " + vagaBuscada.tipo }}
+    </li>
+</ol>

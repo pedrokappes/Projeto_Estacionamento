@@ -1,52 +1,18 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <h1> Buscar carro</h1>
-        <div id="placa">
-            <label for="placa">Informe a placa:</label><br>
-            <input type="text" name="placa" placeholder="Digite a placa:" [(ngModel)]= "placa"/>
-        </div>
-        
-        <button (click)="buscar()">Buscar</button><br><br>
-        <table>
-            <thead>
-                <th>
-                    <a> ID </a>
-                </th>
-                <th>
-                    <a> MODELO </a>
-                </th>
-                <th>
-                    <a> PLACA </a>
-                </th>
-                <th>
-                    <a> COR </a>
-                </th>
-                <th>
-                    <a> ID do dono </a>
-                </th>
-                
-            </thead>
 
-            <tbody ngFor="carroBuscado">
-                <tr>                    
-                    <td>
-                        {{carroBuscado.carroId }}
-                    </td>
-                    <td>
-                        {{carroBuscado.modelo }}
-                    </td>
-                    <td>
-                        {{carroBuscado.placa}}
-                    </td>
-                    <td>
-                        {{carroBuscado.cor }}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        
-    </div>
-    <div id="direita"></div>
-</section>
+
+<div id="placa">
+    <label for="placa">Informe a placa:</label>
+    <input type="text" name="placa" [(ngModel)]= "placa"/>
+</div>
+<button (click)="buscar()">Enviar</button><br><br>
+<ol>
+    <li ngFor="carroBuscado">     
+        {{"Modelo: " + carroBuscado.modelo }}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Placa: " + carroBuscado.placa}}
+    </li>
+    <li ngFor="carroBuscado">     
+        {{"Cor: " + carroBuscado.cor }}
+    </li>
+</ol>

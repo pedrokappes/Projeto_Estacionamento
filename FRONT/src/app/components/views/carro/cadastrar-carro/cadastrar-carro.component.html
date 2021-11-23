@@ -1,29 +1,17 @@
-<section>
-    <div id="esquerda"></div>
-    <div id="meio">
-        <div id="modelo">
-            <h1> Cadastro de carro</h1>
-            <label for="modelo">Modelo:</label>
-            <input type="text" name="modelo" placeholder="Informe o modelo do carro:" [(ngModel)]="modelo" />
-        </div>
+<div id="modelo">
+    <label for="modelo">modelo:</label>
+    <input type="text" name="modelo" [(ngModel)]= "modelo" />
+</div>
 
 
-        <div id="placa">
-            <label for="placa">Placa:</label>
-            <input type="text" name="placa" placeholder="Informe a placa do carro:" [(ngModel)]="placa" />
-        </div>
+<div id="placa">
+    <label for="placa">Placa:</label>
+    <input type="text" name="placa" [(ngModel)]= "placa"/>
+</div>
 
-        <div id="cor">
-            <label for="cor">Cor:</label>
-            <input type="text" name="cor" placeholder="Informe a cor do carro:" [(ngModel)]="cor" />
-        </div>
+<div id="cor">
+    <label for="cor">Cor:</label>
+    <input type="text" name="cor" [(ngModel)]= "cor"/>
+</div>
 
-        <div id="pessoaid">
-            <label for="pessoaid">ID do propriatário:</label>
-            <input type="text" name="pessoaid" placeholder="Informe o ID do dono do carro:" [(ngModel)]="pessoaid" />
-        </div>
-
-        <button (click)="casdastrarCarro()">Cadastro</button>
-    </div>
-    <div id="direita"></div>
-</section>
+<button (click)="casdastrarCarro()">Enviar</button>
