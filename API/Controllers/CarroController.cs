@@ -63,7 +63,8 @@ namespace API.Controllers
         [Route("entradadecarro")]
         public IActionResult Create([FromBody] Carro carro)
         {
-            carro.Pessoa = _context.TabelaPessoas.Find(carro.PessoaId);
+            int pessoaId = carro.PessoaId;
+            carro.Pessoa = _context.TabelaPessoas.Find(pessoaId);
             _context.TabelaCarros.Add(carro);
             _context.SaveChanges();
             return Created("", carro);
@@ -75,7 +76,8 @@ namespace API.Controllers
         [Route("relacaodecarros")]
         public IActionResult List() =>
 
-        Ok(lista(_context));
+        Ok(lista(_context.TabelaCarros)
+        .ToList());
 
 
         public List<Carro> lista(Banco _context)

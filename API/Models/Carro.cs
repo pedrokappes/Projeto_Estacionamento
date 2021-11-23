@@ -13,7 +13,13 @@ namespace API.Models
         public string Placa { get; set; }
         public string Cor { get; set; }     
         public DateTime HoraDeEntra { get; set; }
-        public Pessoa Pessoa { get; set; }   
+        public Pessoa Pessoa { get; set; }  
         public int PessoaId { get; set; }
+
+        //ToString
+        // public override string ToString()
+        // {
+        //     $"Modelo: {Modelo} | Placa: {Placa} | Cor: {Cor} | HoraDeEntra: {HoraDeEntra}";
+        // }
     }
 }

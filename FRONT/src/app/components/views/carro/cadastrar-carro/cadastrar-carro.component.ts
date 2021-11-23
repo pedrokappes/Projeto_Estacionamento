@@ -1,6 +1,8 @@
+import { PessoaService } from './../../../../services/pessoa.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Carro } from 'src/app/models/carro';
+import { Pessoa } from 'src/app/models/pessoa';
 import { CarroService } from 'src/app/services/carro.service';
 
 @Component({
@@ -13,28 +15,34 @@ export class CadastrarCarroComponent implements OnInit {
     modelo!: string;
     placa!: string;
     cor!: string;
+    pessoas!: Pessoa[];
     pessoaid!: number;
 
 
-  constructor(private router: Router, private service : CarroService) { }
 
-  ngOnInit(): void {}
+  constructor(private router: Router, private carroService : CarroService, private pessoaService: PessoaService) { }
+
+  ngOnInit(): void {
+      this.pessoaService.list().subscribe((pessoas) =>{
+          this.pessoas = pessoas;
+          console.table(pessoas);
+      }  )
+  }
 
   casdastrarCarro(): void {
-   
 
     let carro: Carro = {
         modelo: this.modelo,
         placa: this.placa,
         cor: this.cor,
-        pessoaId: this.pessoaid        
+        pessoaId: this.pessoaid,        
     };
-    this.service.create(carro).subscribe((carro) => {
+    this.carroService.create(carro).subscribe((carro) => {
         console.log(carro);
         alert('Cadastro realizado com sucesso!!!');
     });
 
     
-}
+    }
 
 }
