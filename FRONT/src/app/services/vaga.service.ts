@@ -14,19 +14,12 @@ export class VagaService{
     constructor(private http: HttpClient) {}
 
     list(): Observable<Vaga[]> {
-        return this.http.get<Vaga[]>(`${this.baseURL}/relacaodevagas`)
+        return this.http.get<Vaga[]>(`${this.baseURL}/listavagas`)
     }
 
     create(vaga : Vaga): Observable<Vaga> {
         return this.http.post<Vaga>(`${this.baseURL}/novavaga`, vaga);
     }
-    buscar(vagaId: number): Observable<Vaga> {
-        return this.http.get<Vaga>(`${this.baseURL}/buscarporvagaid/${vagaId}`);
-    }
 
-    excluir(vagaId: Int32Array): Observable<Vaga> {
-        return this.http.delete<Vaga>(`${this.baseURL}/removerporvagaid/${vagaId}`);
-    }
-    
 
 }

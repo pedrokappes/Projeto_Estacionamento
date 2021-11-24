@@ -15,22 +15,22 @@ export class PessoaService{
     constructor(private http: HttpClient) {}
 
     list(): Observable<Pessoa[]> {
-        return this.http.get<Pessoa[]>(`${this.baseURL}/relacaodepessoas`)
+        return this.http.get<Pessoa[]>(`${this.baseURL}/listapessoas`)
     }
 
     create(pessoa : Pessoa): Observable<Pessoa> {
         return this.http.post<Pessoa>(`${this.baseURL}/novapessoa`, pessoa);
     }
     atualizar(pessoa: Pessoa): Observable<Pessoa> {
-        return this.http.put<Pessoa>(`${this.baseURL}/atualizarporpessoaid`, pessoa);
+        return this.http.put<Pessoa>(`${this.baseURL}/atualizarpessoa`, pessoa);
     }
 
     excluir(cpf: string): Observable<Pessoa> {
-        return this.http.delete<Pessoa>(`${this.baseURL}/removerporpessoacpf/${cpf}`);
+        return this.http.delete<Pessoa>(`${this.baseURL}/removerpessoacpf/${cpf}`);
     }
 
     buscar(cpf: string): Observable<Pessoa> {
-        return this.http.get<Pessoa>(`${this.baseURL}/bucasrporcpf/${cpf}`);
+        return this.http.get<Pessoa>(`${this.baseURL}/buscarcpf/${cpf}`);
     }
 
 }

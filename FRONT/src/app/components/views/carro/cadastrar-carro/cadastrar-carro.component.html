@@ -1,5 +1,5 @@
 <div id="modelo">
-    <label for="modelo">modelo:</label>
+    <label for="modelo">Modelo:</label>
     <input type="text" name="modelo" [(ngModel)]= "modelo" />
 </div>
 
@@ -16,8 +16,8 @@
 
 <div id="pessoa">
     <label for="pessoa">Dono:</label>
-    <select name="pessoa">
-        <option *ngFor="let pessoa of pessoas" value = "{{ pessoa.cpf }}"> {{ pessoa.nome }} </option>
+    <select name="pessoa" [(ngModel)]= "pessoaId">
+        <option *ngFor="let pessoa of pessoas" value= "{{ pessoa.pessoaId }}"> {{ pessoa.nome }} </option>
     </select>
 </div>
 

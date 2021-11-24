@@ -10,8 +10,8 @@ import { VagaService } from 'src/app/services/vaga.service';
 })
 export class CadastrarVagaComponent implements OnInit {
 
-    status! : boolean;
-    tipo! : Int32Array;
+    status! : string;
+    tipo! : string;
 
   constructor(private router: Router, private service: VagaService) { }
 

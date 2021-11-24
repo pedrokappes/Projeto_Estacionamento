@@ -304,3 +304,38 @@ C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\De
 C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.pdb
 C:\Users\Kappes\Desktop\Projeto_Estacionamento\Projeto_Estacionamento\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.Development.json
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\appsettings.json
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.exe
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.deps.json
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.json
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.runtimeconfig.dev.json
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\ref\API.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\API.pdb
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.AssemblyInfo.cs
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.Manifest.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\scopedcss\bundle\API.styles.css
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.RazorTargetAssemblyInfo.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.csproj.CopyComplete
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\ref\API.dll
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.pdb
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+E:\Aulas\2 - Ano\2- Semestre\Desenvolvimento de Software\Trabalho\Projeto_Estacionamento\api\bin\Debug\net5.0\package-lock.json

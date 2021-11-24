@@ -35,7 +35,7 @@ export class CadastrarCarroComponent implements OnInit {
         modelo: this.modelo,
         placa: this.placa,
         cor: this.cor,
-        // pessoaId: this.pessoaId,
+        pessoaId: this.pessoaId
     };
     this.carroService.create(carro).subscribe((carro) => {
         console.log(carro);

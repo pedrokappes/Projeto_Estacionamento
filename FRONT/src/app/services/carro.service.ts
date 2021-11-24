@@ -13,21 +13,21 @@ export class CarroService {
     constructor(private http: HttpClient) {}
 
     list(): Observable<Carro[]> {
-        return this.http.get<Carro[]>(`${this.baseURL}/relacaodecarros`);
+        return this.http.get<Carro[]>(`${this.baseURL}/listacarros`);
     }
 
     create(carro: Carro): Observable<Carro> {
-        return this.http.post<Carro>(`${this.baseURL}/entradadecarro`, carro);
+        return this.http.post<Carro>(`${this.baseURL}/cadastrarcarro`, carro);
     }
 
     atualizar(carro: Carro): Observable<Carro> {
-        return this.http.put<Carro>(`${this.baseURL}/atualizarporcarroid`, carro);
+        return this.http.put<Carro>(`${this.baseURL}/atualizarcarro`, carro);
     }
 
     buscar(placa: string): Observable<Carro> {
-        return this.http.get<Carro>(`${this.baseURL}/bucasrporplaca/${placa}`);
+        return this.http.get<Carro>(`${this.baseURL}/buscarplaca/${placa}`);
     }
     excluir(placa: string): Observable<Carro> {
-        return this.http.delete<Carro>(`${this.baseURL}/removerporcarroplaca/${placa}`);
+        return this.http.delete<Carro>(`${this.baseURL}/removercarro/${placa}`);
     }
 }

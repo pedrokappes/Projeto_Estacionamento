@@ -1,9 +1,10 @@
 
 <ol>
-    <li *ngFor="let carro of relacaodecarros">
+    <li *ngFor="let carro of listacarros">
      
         {{"Modelo: " + carro.modelo }}
         {{"Placa: " + carro.placa}}
-        {{"Cor: " + carro.cor }}
+        {{"Cor: " + carro.cor }}            
+        {{"Dono: " + carro.pessoa!.nome }}       
     </li>
 </ol>

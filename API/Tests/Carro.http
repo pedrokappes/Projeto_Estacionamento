@@ -1,37 +1,33 @@
 
 ### Create - Cadastrar
-POST https://localhost:5001/api/carro/entradadecarro
+POST https://localhost:5001/api/carro/cadastrarcarro
 Content-Type: application/json
 
 {
-    "Modelo" : "Carro do Pedro certo",
-    "Placa" : "bbc-666",
-    "Cor" : "Roxo" ,
-    "PessoaId" : 2
+    "Modelo" : "Pedro",
+    "Placa" : "aaa-1111",
+    "Cor" : "Preto",
+    "PessoaId" : 4  
+
 }
 
 ### Read - Listar
-GET https://localhost:5001/api/carro/relacaodecarros
-
-### Buscar - Buscar por Id
-GET https://localhost:5001/api/carro/buscarporcarroid/2
+GET https://localhost:5001/api/carro/listacarros
 
 ### Buscar - Buscar por Placa
-GET https://localhost:5001/api/carro/bucasrporplaca/bbc-666
+GET https://localhost:5001/api/carro/buscarplaca/aaa-1111
 
 ### Update - Atualizar por Id
-PUT https://localhost:5001/api/carro/atualizarporcarroid
+PUT https://localhost:5001/api/carro/atualizarcarro
 Content-Type: application/json
 
 {
-    "CarroId" :  3,
-    "Modelo" : "Mercedes",
-    "Placa" : "ooo-0001",
-    "Cor" : "preto" 
+    "CarroId" :  1,
+    "Modelo" : "Pedro",
+    "Placa" : "bbb-2222",
+    "Cor" : "Cinza",
+    "PessoaId" : 2
 }
 
-### Delete - Excluir por Id
-DELETE https://localhost:5001/api/carro/removerporcarroid/3
-
 ### Delete - Excluir por Placa
-DELETE https://localhost:5001/api/carro/removerporcarroplaca/abc-123
+DELETE https://localhost:5001/api/carro/removercarro/bbb-2222
