@@ -21,7 +21,7 @@ namespace API.Controllers {
         //Create - Adicionar uma nova pessoa
         [HttpPost]
         [Route("novapessoa")]
-        public IActionResult Create([FromBody] Pessoa pessoa) {
+        public IActionResult novapessoa([FromBody] Pessoa pessoa) {
 
             _context.TabelaPessoas.Add(pessoa);
             _context.SaveChanges();
@@ -31,28 +31,13 @@ namespace API.Controllers {
 
         //Read - Listar relação de pessoas
         [HttpGet]
-        [Route("relacaodepessoas")]
+        [Route("listapessoas")]
         public IActionResult List() => Ok(_context.TabelaPessoas.ToList());
-
-
-        //Buscar - realizar buscar de pessoas por ID
-        [HttpGet]
-        [Route("buscarporpessoaid/{id}")]
-        public IActionResult buscarporpessoaid([FromRoute]int id) {
-            Pessoa pessoa = _context.TabelaPessoas.Find(id);
-
-            if(pessoa == null) {
-                return NotFound();
-            }
-
-            return Ok(pessoa);
-        }
-
 
         //Buscar - realizar buscar de pessoas pelo cpf
         [HttpGet]
-        [Route("bucasrporcpf/{cpf}")]
-        public IActionResult bucasrporcpf([FromRoute]string cpf) {
+        [Route("buscarcpf/{cpf}")]
+        public IActionResult buscarcpf([FromRoute]string cpf) {
             Pessoa pessoa = _context.TabelaPessoas.Single(pessoa => pessoa.Cpf == cpf);
             
             if(pessoa == null) {
@@ -63,39 +48,20 @@ namespace API.Controllers {
         }
         
 
-        //Upgrade - Atualizar informações dos carros listados por ID
+        //Upgrade - Atualizar informações das pessoa id
         [HttpPut]
-        [Route("atualizarporpessoaid")]
-        public IActionResult atualizarporpessoaid([FromBody] Pessoa pessoa) {
+        [Route("atualizarpessoa")]
+        public IActionResult atualizarpessoa([FromBody] Pessoa pessoa) {
 
             _context.TabelaPessoas.Update(pessoa);
             _context.SaveChanges();
             return Ok(pessoa);
         }
 
-
-        //Delete - Excluir pessoas por ID
-        [HttpDelete]
-        [Route("removerporpessoaid/{id}")]
-        public IActionResult removerporpessoaid ([FromRoute]int id) {
-
-            Pessoa pessoa = _context.TabelaPessoas.FirstOrDefault (
-                pessoa => pessoa.PessoaId == id
-            );
-
-            if(pessoa == null) {
-                return NotFound();
-            }
-            _context.TabelaPessoas.Remove(pessoa);
-            _context.SaveChanges();
-            return Ok(pessoa);
-        }
-
-
         //Delete - Excluir pessoa por CPF
         [HttpDelete]
-        [Route("removerporpessoacpf/{cpf}")]
-        public IActionResult removerporpessoacpf ([FromRoute]string cpf) {
+        [Route("removerpessoacpf/{cpf}")]
+        public IActionResult removerpessoacpf ([FromRoute]string cpf) {
             
             Pessoa pessoa = _context.TabelaPessoas.FirstOrDefault (
                 pessoa => pessoa.Cpf == cpf

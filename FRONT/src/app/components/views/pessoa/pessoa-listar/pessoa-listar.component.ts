@@ -9,13 +9,13 @@ import { PessoaService } from 'src/app/services/pessoa.service';
 })
 export class PessoaListarComponent implements OnInit {
 
-    relacaodepessoa: Pessoa[] = [];
+    listapessoas: Pessoa[] = [];
     constructor(private service: PessoaService) {}
     
     ngOnInit(): void {
-        this.service.list().subscribe(relacaodepessoa => {
-            this.relacaodepessoa = relacaodepessoa;
-            for(let pessoa of relacaodepessoa){
+        this.service.list().subscribe(listapessoas => {
+            this.listapessoas = listapessoas;
+            for(let pessoa of listapessoas){
                 console.log(pessoa);
             }
         });

@@ -9,13 +9,13 @@ import { VagaService } from 'src/app/services/vaga.service';
 })
 export class VagaListarComponent implements OnInit {
 
-    relacaodevaga: Vaga[] = [];
+    listavagas: Vaga[] = [];
     constructor(private service: VagaService) {}
 
     ngOnInit(): void {
-        this.service.list().subscribe(relacaodevaga => {
-            this.relacaodevaga = relacaodevaga;
-            for(let vaga of relacaodevaga){
+        this.service.list().subscribe(listavagas => {
+            this.listavagas = listavagas;
+            for(let vaga of listavagas){
                 console.log(vaga);
             }
         });

@@ -26,7 +26,8 @@ export class AtualizarCarroComponent implements OnInit {
         carroId: this.carroId,
         modelo: this.modelo,
         placa: this.placa,
-        cor: this.cor
+        cor: this.cor,
+        pessoaId! : 1
     };
     this.service.atualizar(carro).subscribe();
     console.log(carro);

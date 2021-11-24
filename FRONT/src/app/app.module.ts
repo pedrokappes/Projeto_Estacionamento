@@ -12,13 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { CadastrarPessoaComponent } from './components/views/pessoa/cadastrar-pessoa/cadastrar-pessoa.component';
 import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/cadastrar-vaga.component';
 import { BuscarPlacaCarroComponent } from './components/views/carro/buscar-placa-carro/buscar-placa-carro.component';
-import { ExcluirCarroIDComponent } from './components/views/carro/excluir-carro-id/excluir-carro-id.component';
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
-import { BuscarVagaComponent } from './components/views/vaga/buscar-vaga/buscar-vaga.component';
-import { ExcluirVagaComponent } from './components/views/vaga/excluir-vaga/excluir-vaga.component';
 
 @NgModule({
     declarations: [
@@ -30,13 +27,10 @@ import { ExcluirVagaComponent } from './components/views/vaga/excluir-vaga/exclu
         VagaListarComponent,
         CadastrarVagaComponent,
         BuscarPlacaCarroComponent,
-        ExcluirCarroIDComponent,
         AtualizarCarroComponent,
         BuscarPessoaComponent,
         PessoaExcluirComponent,
         AtualizarPessoaComponent,
-        BuscarVagaComponent,
-        ExcluirVagaComponent
 
     ],
     imports: [

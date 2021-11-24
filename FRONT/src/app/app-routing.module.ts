@@ -7,14 +7,10 @@ import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/p
 import { VagaListarComponent } from './components/views/vaga/vaga-listar/vaga-listar.component';
 import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/cadastrar-vaga.component';
 import { BuscarPlacaCarroComponent } from './components/views/carro/buscar-placa-carro/buscar-placa-carro.component';
-import { ExcluirCarroIDComponent } from './components/views/carro/excluir-carro-id/excluir-carro-id.component';
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
-import { BuscarVagaComponent } from './components/views/vaga/buscar-vaga/buscar-vaga.component';
-import { ExcluirVagaComponent } from './components/views/vaga/excluir-vaga/excluir-vaga.component';
-
 const routes: Routes = [
        {
         path: "pessoa/listar",
@@ -31,10 +27,6 @@ const routes: Routes = [
     {
         path: "carro/buscar",
         component: BuscarPlacaCarroComponent,
-    },
-    {
-        path: "carro/excluir",
-        component: ExcluirCarroIDComponent,
     },
     {
         path: "carro/atualizar",
@@ -63,14 +55,6 @@ const routes: Routes = [
     {
         path: "pessoa/atualizar",
         component: AtualizarPessoaComponent
-    },
-    {
-        path: "vaga/buscar",
-        component: BuscarVagaComponent,
-    },
-    {
-        path: "vaga/deletar",
-        component: ExcluirVagaComponent,
     },
     
     

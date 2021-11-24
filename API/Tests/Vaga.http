@@ -3,27 +3,21 @@ POST https://localhost:5001/api/vaga/novavaga
 Content-Type: application/json
 
 {
-    "Status" : false,
-    "Tipo" : 15
+    "Status" : "Livre",
+    "Tipo" : "Carro"
 }
 
 ### Read - Listar
-GET https://localhost:5001/api/vaga/relacaodevagas
-
-### Buscar - Buscar por iD
-GET https://localhost:5001/api/vaga/buscarporvagaid/6
+GET https://localhost:5001/api/vaga/listavagas
 
 
 ### Update - Atualizar por Id
-PUT https://localhost:5001/api/vaga/atualizarporvagaid
+PUT https://localhost:5001/api/vaga/atualizarvaga
 Content-Type: application/json
 
 {   
-    "VagaId" : 2,
-    "Status" : true,
-    "Tipo" : 27 
+    "VagaId" : 1,
+    "Tipo" : "Moto",
+    "CarroId" : 1
 }
-
-### Delete - Excluir por Id
-DELETE https://localhost:5001/api/vaga/removerporvagaid/2
 
