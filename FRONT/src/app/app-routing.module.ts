@@ -59,7 +59,11 @@ const routes: Routes = [
     {
         path: "pessoa/atualizar",
         component: AtualizarPessoaComponent
+    },{
+        path: "pessoa/removercarro",
+        component: AtualizarPessoaComponent
     },
+    
     
     
 ];

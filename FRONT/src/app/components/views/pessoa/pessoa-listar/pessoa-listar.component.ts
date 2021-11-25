@@ -10,6 +10,9 @@ import { PessoaService } from 'src/app/services/pessoa.service';
 export class PessoaListarComponent implements OnInit {
 
     listapessoas: Pessoa[] = [];
+    colunasExibidas : String[] = ["pessoaId","nome","cpf","telefone"];
+
+
     constructor(private service: PessoaService) {}
     
     ngOnInit(): void {
