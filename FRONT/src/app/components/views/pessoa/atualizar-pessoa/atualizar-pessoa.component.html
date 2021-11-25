@@ -1,22 +1,27 @@
-<div id="pessoaId">
-    <label for="pessoaId">ID:</label>
-    <input type="number" name="pessoaId" [(ngModel)]= "pessoaId" />
-</div>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Atualizar Pessoa</mat-card-title>
+    </mat-card-header>
 
-<div id="nome">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" [(ngModel)]= "nome" />
-</div>
+    <mat-card-content>
 
+        <mat-form-field class="input" id="pessoaId">
+            <mat-label for="pessoaId">ID:</mat-label>
+            <input matInput type="text" name="pessoaId" [(ngModel)]="pessoaId" />
+        </mat-form-field>
 
-<div id="cpf">
-    <label for="cpf">Cpf:</label>
-    <input type="text" name="cpf" [(ngModel)]= "cpf"/>
-</div>
-
-<div id="telefone">
-    <label for="telefone">Telefone:</label>
-    <input type="text" name="telefone" [(ngModel)]= "telefone"/>
-</div>
-
-<button (click)="atualizarCliente()">Cadastrar</button>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Nome:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="nome" />
+        </mat-form-field>
+        <mat-form-field class="input" id="cpf">
+            <mat-label for="cpf">Cpf:</mat-label>
+            <input matInput type="text" name="cpf" [(ngModel)]="cpf" />
+        </mat-form-field>
+        <mat-form-field class="input" id="telefone">
+            <mat-label for="telefone">Telefone:</mat-label>
+            <input matInput type="text" name="telefone" [(ngModel)]="telefone" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-flat-button color="primary" (click)="atualizarCliente()">Atualizar</button>
+</mat-card>

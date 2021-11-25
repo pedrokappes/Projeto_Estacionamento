@@ -11,6 +11,7 @@ import { AtualizarCarroComponent } from './components/views/carro/atualizar-carr
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
+
 const routes: Routes = [
     {
         path: "",

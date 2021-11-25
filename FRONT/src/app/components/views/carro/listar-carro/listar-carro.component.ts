@@ -10,6 +10,8 @@ import { CarroService } from 'src/app/services/carro.service';
 export class ListarCarroComponent implements OnInit {
 
     listacarros: Carro[] = [];
+    colunasExibidas : String[] = ["carroId","modelo","placa","cor","pessoa"];
+
     constructor(private service: CarroService) {}
     
     ngOnInit(): void {
