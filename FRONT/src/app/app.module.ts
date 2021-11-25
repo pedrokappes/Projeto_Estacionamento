@@ -25,6 +25,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
     declarations: [
@@ -56,6 +59,9 @@ import {MatTableModule} from '@angular/material/table';
         MatSidenavModule,
         MatListModule,
         MatTableModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCardModule
 
     ],
     providers: [],

@@ -1,8 +1,6 @@
 .container{
     height: calc(100% - 64px);
 }
-.mat-sidenav-container{
-    background-color: white;
-    color: black;  
+h1{
+    text-align: center;
 }
-

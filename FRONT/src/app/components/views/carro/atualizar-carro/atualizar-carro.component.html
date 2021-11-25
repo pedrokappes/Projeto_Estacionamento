@@ -1,22 +1,27 @@
-<div id="carroId">
-    <label for="carroId">ID:</label>
-    <input type="number" name="carroId" [(ngModel)]= "carroId" />
-</div>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Atualizar Carro</mat-card-title>
+    </mat-card-header>
 
-<div id="modelo">
-    <label for="modelo">modelo:</label>
-    <input type="text" name="modelo" [(ngModel)]= "modelo" />
-</div>
+    <mat-card-content>
 
+        <mat-form-field class="input" id="carroId">
+            <mat-label for="carroId">ID:</mat-label>
+            <input matInput type="text" name="carroId" [(ngModel)]="carroId" />
+        </mat-form-field>
 
-<div id="placa">
-    <label for="placa">Placa:</label>
-    <input type="text" name="placa" [(ngModel)]= "placa"/>
-</div>
-
-<div id="cor">
-    <label for="cor">Cor:</label>
-    <input type="text" name="cor" [(ngModel)]= "cor"/>
-</div>
-
-<button (click)="atualizarCarro()">Enviar</button>
+        <mat-form-field class="input" id="modelo">
+            <mat-label for="modelo">Modelo:</mat-label>
+            <input matInput type="text" name="modelo" [(ngModel)]="modelo" />
+        </mat-form-field>
+        <mat-form-field class="input" id="placa">
+            <mat-label for="placa">Placa:</mat-label>
+            <input matInput type="text" name="placa" [(ngModel)]="placa" />
+        </mat-form-field>
+        <mat-form-field class="input" id="cor">
+            <mat-label for="cor">Cor:</mat-label>
+            <input matInput type="text" name="cor" [(ngModel)]="cor" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-flat-button color="primary" (click)="atualizarCarro()">Atualizar</button>
+</mat-card>
