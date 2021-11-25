@@ -16,6 +16,13 @@ import { AtualizarCarroComponent } from './components/views/carro/atualizar-carr
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir/pessoa-excluir.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TemplateComponent } from './components/template/template.component';
+//Eu 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
     declarations: [
@@ -31,13 +38,20 @@ import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pe
         BuscarPessoaComponent,
         PessoaExcluirComponent,
         AtualizarPessoaComponent,
+        TemplateComponent,
 
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule,
+        //Eu
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        MatSidenavModule
 
     ],
     providers: [],

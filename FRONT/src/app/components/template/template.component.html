@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <button (click)="sidenav.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Teste</span>
+</mat-toolbar>
+<mat-sidenav-container class="container">
+    <mat-sidenav #sidenav opened mode="side">
+        <h1>Navegação</h1>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+
+
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
