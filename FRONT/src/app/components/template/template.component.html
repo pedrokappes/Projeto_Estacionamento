@@ -2,11 +2,19 @@
     <button (click)="sidenav.toggle()" mat-icon-button>
         <mat-icon>menu</mat-icon>
     </button>
-    <span>Teste</span>
+    <span>Menu</span>
 </mat-toolbar>
 <mat-sidenav-container class="container">
     <mat-sidenav #sidenav opened mode="side">
-        <h1>Navegação</h1>
+        <mat-nav-list>
+            <a mat-list-item routerLink=""> Cadastro de cliente </a>
+            <a mat-list-item routerLink="pessoa/listar"> Listar Clientes  </a>
+            <a mat-list-item routerLink="pessoa/atualizar"> Atualizar de cliente </a>
+         </mat-nav-list>
+         <mat-nav-list>
+            <a mat-list-item routerLink="carro/cadastrar"> Cadastros de Carro </a>
+            <a mat-list-item routerLink="carro/listar"> Listar Carros  </a>
+         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
 
