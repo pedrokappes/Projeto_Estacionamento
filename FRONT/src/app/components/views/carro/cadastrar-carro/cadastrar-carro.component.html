@@ -1,24 +1,33 @@
-<div id="modelo">
-    <label for="modelo">Modelo:</label>
-    <input type="text" name="modelo" [(ngModel)]= "modelo" />
-</div>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastro de Pessoa</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="modelo">
+            <mat-label for="modelo">Modelo:</mat-label>
+            <input matInput type="text" name="modelo" [(ngModel)]="modelo" />
+        </mat-form-field>
+        <mat-form-field class="input" id="Placa">
+            <mat-label for="Placa">Placa:</mat-label>
+            <input matInput type="text" name="Placa" [(ngModel)]="placa" />
+        </mat-form-field>
+        <mat-form-field class="input" id="cor">
+            <mat-label for="cor">Cor:</mat-label>
+            <input matInput type="text" name="cor" [(ngModel)]="cor" />
+        </mat-form-field>
+
+        <mat-form-field class="input" id="pessoa">
+            <mat-label for="pessoa">Dono:</mat-label>
+            <mat-select name="pessoa" [(ngModel)]="pessoaId">
+                <mat-option *ngFor="let pessoa of pessoas" value="{{ pessoa.pessoaId }}">
+                    {{ pessoa.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
 
 
-<div id="placa">
-    <label for="placa">Placa:</label>
-    <input type="text" name="placa" [(ngModel)]= "placa"/>
-</div>
 
-<div id="cor">
-    <label for="cor">Cor:</label>
-    <input type="text" name="cor" [(ngModel)]= "cor"/>
-</div>
 
-<div id="pessoa">
-    <label for="pessoa">Dono:</label>
-    <select name="pessoa" [(ngModel)]= "pessoaId">
-        <option *ngFor="let pessoa of pessoas" value= "{{ pessoa.pessoaId }}"> {{ pessoa.nome }} </option>
-    </select>
-</div>
-
-<button (click)="casdastrarCarro()">Enviar </button>
+    </mat-card-content>
+    <button mat-flat-button color="primary" (click)="casdastrarCarro()">Cadastrar</button>
+</mat-card>

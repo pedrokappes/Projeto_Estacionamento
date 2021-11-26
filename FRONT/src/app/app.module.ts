@@ -28,6 +28,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
 
 @NgModule({
     declarations: [
@@ -44,6 +46,7 @@ import {MatCardModule} from '@angular/material/card';
         PessoaExcluirComponent,
         AtualizarPessoaComponent,
         TemplateComponent,
+        VagaAtualizarComponent,
 
     ],
     imports: [
@@ -61,7 +64,8 @@ import {MatCardModule} from '@angular/material/card';
         MatTableModule,
         MatFormFieldModule,
         MatInputModule,
-        MatCardModule
+        MatCardModule,
+        MatSelectModule
 
     ],
     providers: [],
