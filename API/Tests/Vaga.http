@@ -11,6 +11,7 @@ Content-Type: application/json
 
 {   
     "VagaId" : 1,
-    "status" : "ocupado"
+    "status" : "ocupado",
+    "carroId" : 1
 }
 

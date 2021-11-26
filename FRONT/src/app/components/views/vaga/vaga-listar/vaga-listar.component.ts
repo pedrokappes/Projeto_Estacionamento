@@ -3,21 +3,21 @@ import { Vaga } from 'src/app/models/vaga';
 import { VagaService } from 'src/app/services/vaga.service';
 
 @Component({
-  selector: 'app-vaga-listar',
-  templateUrl: './vaga-listar.component.html',
-  styleUrls: ['./vaga-listar.component.css']
+    selector: 'app-vaga-listar',
+    templateUrl: './vaga-listar.component.html',
+    styleUrls: ['./vaga-listar.component.css']
 })
 export class VagaListarComponent implements OnInit {
 
     listavagas: Vaga[] = [];
-    //colunasExibidas : String[] = ["vagaId","status","cpf","telefone"];
+    colunasExibidas: String[] = ["vagaId", "status", "carro"];
 
-    constructor(private service: VagaService) {}
+    constructor(private service: VagaService) { }
 
     ngOnInit(): void {
         this.service.list().subscribe(listavagas => {
             this.listavagas = listavagas;
-            for(let vaga of listavagas){
+            for (let vaga of listavagas) {
                 console.log(vaga);
             }
         });

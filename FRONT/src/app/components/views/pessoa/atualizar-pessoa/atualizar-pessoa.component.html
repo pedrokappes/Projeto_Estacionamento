@@ -1,13 +1,17 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Atualizar Pessoa</mat-card-title>
+        <mat-card-title>Atualizar Cliente</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
 
         <mat-form-field class="input" id="pessoaId">
-            <mat-label for="pessoaId">ID:</mat-label>
-            <input matInput type="text" name="pessoaId" [(ngModel)]="pessoaId" />
+            <mat-label for="pessoaId">ID do Cliente</mat-label>
+            <mat-select name="pessoaId" [(ngModel)]="pessoaId">
+                <mat-option *ngFor="let pessoa of pessoas" value="{{ pessoa.pessoaId }}">
+                    {{ pessoa.pessoaId }}
+                </mat-option>
+            </mat-select>
         </mat-form-field>
 
         <mat-form-field class="input" id="nome">

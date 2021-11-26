@@ -33,24 +33,11 @@ namespace API.Controllers {
             return Ok(new { message = "Dados inicializados com sucesso!" });
         }
 
-        //Create - Adicionar uma nova vaga
-        [HttpPost]
-        [Route("novavaga")]
-
-        public IActionResult novavaga([FromBody] Vaga vaga) {
-            int carroId = vaga.CarroId;
-            vaga.Carro = _context.TabelaCarros.Find(carroId);
-            _context.TabelaVagas.Add(vaga);
-            _context.SaveChanges();
-            return Created("", vaga);
-        }
-
-
         //Read - Listar relação de vaga
         [HttpGet]
         [Route("listavagas")]
         public IActionResult List() => Ok(_context.TabelaVagas.ToList());
-                
+    
         //Upgrade - Atualizar informações dos carros listados por ID
         [HttpPut]
         [Route("atualizarvaga")]
