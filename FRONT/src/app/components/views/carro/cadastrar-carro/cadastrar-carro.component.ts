@@ -38,8 +38,8 @@ export class CadastrarCarroComponent implements OnInit {
         pessoaId: this.pessoaId
     };
     this.carroService.create(carro).subscribe((carro) => {
-        console.log(carro);
         alert('Cadastro realizado com sucesso!!!');
+        window.location.reload();
     });
 
     

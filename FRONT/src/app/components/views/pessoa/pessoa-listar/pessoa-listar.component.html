@@ -27,7 +27,7 @@
         <ng-container matColumnDef="deletar">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let pessoa;" > 
-                <button mat-icon-button  color="warn" routerLink="vaga/listar" type="button"  value='' (click)="excluir(pessoa.cpf)" >
+                <button mat-icon-button  color="warn" type="button"  value='' (click)="excluir(pessoa.cpf)" >
                    <mat-icon >delete</mat-icon>
                 </button> 
             </td>

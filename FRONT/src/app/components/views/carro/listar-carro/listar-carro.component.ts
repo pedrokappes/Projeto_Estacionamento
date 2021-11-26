@@ -10,7 +10,7 @@ import { CarroService } from 'src/app/services/carro.service';
 export class ListarCarroComponent implements OnInit {
 
     listacarros: Carro[] = [];
-    colunasExibidas : String[] = ["carroId","modelo","placa","cor","pessoa",];
+    colunasExibidas : String[] = ["carroId","modelo","placa","cor","pessoa", "deletar"];
 
     constructor(private service: CarroService) {}
     
@@ -22,4 +22,10 @@ export class ListarCarroComponent implements OnInit {
             }
         });
     }
+
+    excluir(deletar : string): void {
+        this.service.excluir(deletar).subscribe();
+        alert('Carro excluido com sucesso!!!');
+        window.location.reload();
+        }
 }
