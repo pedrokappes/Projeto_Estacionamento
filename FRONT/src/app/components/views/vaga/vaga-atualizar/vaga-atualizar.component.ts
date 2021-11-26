@@ -39,7 +39,8 @@ export class VagaAtualizarComponent implements OnInit {
             carroId: this.carroId
         };
         this.service.atualizar(vaga).subscribe();
-
+        alert('Vaga atualizada com sucesso!!!');
+        window.location.reload();
 
     }
 
