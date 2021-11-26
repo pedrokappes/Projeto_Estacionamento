@@ -24,10 +24,19 @@
             <th mat-header-cell *matHeaderCellDef>Telefone</th>
             <td mat-cell *matCellDef="let pessoa"> {{pessoa.telefone}} </td>
         </ng-container>
-        <td><button>aaa</button></td>
-
+        <ng-container matColumnDef="deletar">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let pessoa;" > 
+                <button mat-icon-button  color="warn" routerLink="vaga/listar" type="button"  value='' (click)="excluir(pessoa.cpf)" >
+                   <mat-icon >delete</mat-icon>
+                </button> 
+            </td>
+         </ng-container>
+        
         <tr mat-header-row *matHeaderRowDef="colunasExibidas"></tr>
         <tr mat-row *matRowDef="let row; columns: colunasExibidas;"></tr>
 
     </table>
+
+   
 </mat-card>

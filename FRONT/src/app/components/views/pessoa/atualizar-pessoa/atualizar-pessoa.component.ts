@@ -33,7 +33,8 @@ export class AtualizarPessoaComponent implements OnInit {
         telefone: this.telefone
     };
     this.service.atualizar(pessoa).subscribe();
-    console.log(pessoa);
+    alert('Cliente atualizado com sucesso!!!');
+    window.location.reload();
     
 
 }
