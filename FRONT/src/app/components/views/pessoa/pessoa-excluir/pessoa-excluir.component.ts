@@ -18,5 +18,6 @@ export class PessoaExcluirComponent implements OnInit {
 
     excluir(): void{
         this.service.excluir(this.cpf).subscribe();
+        
     }
 }
