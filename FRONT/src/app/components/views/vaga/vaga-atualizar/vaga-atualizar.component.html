@@ -6,14 +6,39 @@
     <mat-card-content>
 
         <mat-form-field class="input" id="vagaId">
-            <mat-label for="vagaId">ID:</mat-label>
-            <input matInput type="text" name="vagaId" [(ngModel)]="vagaId" />
+            <mat-label for="vagaId">Numero da vaga:</mat-label>
+            <mat-select name="vagaId" [(ngModel)]="vagaId">
+                <mat-option *ngFor="let vaga of vagalista" value="{{ vaga.vagaId }}">
+                    {{ vaga.vagaId }}
+                </mat-option>
+            </mat-select>
         </mat-form-field>
 
+
         <mat-form-field class="input" id="status">
-            <mat-label for="status">Nome:</mat-label>
-            <input matInput type="text" name="status" [(ngModel)]="status" />
+            <mat-label for="status">Status</mat-label>
+            <mat-select name="status" [(ngModel)]="status">
+                <mat-option value="Livre">
+                    Livre
+                </mat-option>
+                <mat-option value="Ocupado">
+                    Ocupado
+                </mat-option>
+            </mat-select>
         </mat-form-field>
+
+        <mat-form-field class="input" id="carro">
+            <mat-label for="carro">Placa:</mat-label>
+            <mat-select name="carro" [(ngModel)]="carroId">
+                <mat-option *ngFor="let carro of carros" value="{{ carro.carroId }}">
+                    {{ carro.placa }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+
+
     </mat-card-content>
     <button mat-flat-button color="primary" (click)="atualizarVaga()">Atualizar</button>
 </mat-card>

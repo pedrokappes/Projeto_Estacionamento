@@ -14,10 +14,14 @@ export class AtualizarPessoaComponent implements OnInit {
     nome!: string;
     cpf!: string;
     telefone!: string;
+    pessoas!: Pessoa[];
 
-  constructor(private router: Router, private service : PessoaService) { }
+  constructor(private router: Router, private service : PessoaService ) { }
 
   ngOnInit(): void {
+    this. service.list().subscribe(pessoas => {
+        this.pessoas = pessoas;
+    }) 
   }
 
   atualizarCliente(): void {

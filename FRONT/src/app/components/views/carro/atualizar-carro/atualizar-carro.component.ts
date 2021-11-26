@@ -14,10 +14,14 @@ export class AtualizarCarroComponent implements OnInit {
     modelo!: string;
     placa!: string;
     cor!: string;
+    carros!: Carro[];
     
-  constructor(private router: Router, private service : CarroService) { }
+  constructor(private router: Router, private service : CarroService,private carroService: CarroService) { }
 
   ngOnInit(): void {
+    this.carroService.list().subscribe(carros => {
+        this.carros = carros;
+    })
   }
 
   atualizarCarro(): void {
