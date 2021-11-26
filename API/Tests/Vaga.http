@@ -1,15 +1,6 @@
 ###Iniciando - criar
 POST https://localhost:5001/api/vaga/inicial
 
-###Create - criar
-POST https://localhost:5001/api/vaga/novavaga
-Content-Type: application/json
-
-{
-    "Status" : "Livre",
-    "Tipo" : "Carro"
-}
-
 ### Read - Listar
 GET https://localhost:5001/api/vaga/listavagas
 

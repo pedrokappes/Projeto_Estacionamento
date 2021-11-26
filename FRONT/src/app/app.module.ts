@@ -10,7 +10,6 @@ import { PessoaListarComponent } from './components/views/pessoa/pessoa-listar/p
 import { VagaListarComponent } from './components/views/vaga/vaga-listar/vaga-listar.component';
 import { FormsModule } from '@angular/forms';
 import { CadastrarPessoaComponent } from './components/views/pessoa/cadastrar-pessoa/cadastrar-pessoa.component';
-import { CadastrarVagaComponent } from './components/views/vaga/cadastrar-vaga/cadastrar-vaga.component';
 import { BuscarPlacaCarroComponent } from './components/views/carro/buscar-placa-carro/buscar-placa-carro.component';
 import { AtualizarCarroComponent } from './components/views/carro/atualizar-carro/atualizar-carro.component';
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
@@ -39,7 +38,6 @@ import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/v
         PessoaListarComponent,
         CadastrarPessoaComponent,
         VagaListarComponent,
-        CadastrarVagaComponent,
         BuscarPlacaCarroComponent,
         AtualizarCarroComponent,
         BuscarPessoaComponent,
