@@ -5,11 +5,16 @@
 
     <mat-card-content>
 
-        <mat-form-field class="input" id="carroId">
-            <mat-label for="carroId">ID:</mat-label>
-            <input matInput type="text" name="carroId" [(ngModel)]="carroId" />
-        </mat-form-field>
 
+        <mat-form-field class="input" id="carroId">
+            <mat-label for="carroId">ID do Carro:</mat-label>
+            <mat-select name="carroId" [(ngModel)]="carroId">
+                <mat-option *ngFor="let carro of carros" value="{{ carro.carroId }}">
+                    {{ carro.carroId }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        
         <mat-form-field class="input" id="modelo">
             <mat-label for="modelo">Modelo:</mat-label>
             <input matInput type="text" name="modelo" [(ngModel)]="modelo" />
