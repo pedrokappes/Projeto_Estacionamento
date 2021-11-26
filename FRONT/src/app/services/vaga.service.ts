@@ -17,10 +17,6 @@ export class VagaService{
         return this.http.get<Vaga[]>(`${this.baseURL}/listavagas`)
     }
 
-    create(vaga : Vaga): Observable<Vaga> {
-        return this.http.post<Vaga>(`${this.baseURL}/novavaga`, vaga);
-    }
-
     atualizar(vaga : Vaga): Observable<Vaga> {
         return this.http.put<Vaga>(`${this.baseURL}/atualizarvaga`, vaga);
     }
