@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Atualizar Vaga</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+        <mat-form-field class="input" id="vagaId">
+            <mat-label for="vagaId">ID:</mat-label>
+            <input matInput type="text" name="vagaId" [(ngModel)]="vagaId" />
+        </mat-form-field>
+
+        <mat-form-field class="input" id="status">
+            <mat-label for="status">Nome:</mat-label>
+            <input matInput type="text" name="status" [(ngModel)]="status" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-flat-button color="primary" (click)="atualizarVaga()">Atualizar</button>
+</mat-card>

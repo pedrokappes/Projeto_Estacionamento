@@ -10,6 +10,8 @@ import { VagaService } from 'src/app/services/vaga.service';
 export class VagaListarComponent implements OnInit {
 
     listavagas: Vaga[] = [];
+    //colunasExibidas : String[] = ["vagaId","status","cpf","telefone"];
+
     constructor(private service: VagaService) {}
 
     ngOnInit(): void {

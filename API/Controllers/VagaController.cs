@@ -17,6 +17,21 @@ namespace API.Controllers {
             _context = context;
         }
 
+        //Inicializando - Gerando uma nova vaga
+        [HttpPost]
+        [Route("inicial")]
+        public IActionResult inicial()
+        {
+            _context.TabelaVagas.AddRange(new Vaga[]
+                {
+                    new Vaga { VagaId = 1, Status = "Livre" },
+                    new Vaga { VagaId = 2, Status = "Livre" },
+                    new Vaga { VagaId = 3, Status = "Livre" },
+                }
+            );
+            _context.SaveChanges();
+            return Ok(new { message = "Dados inicializados com sucesso!" });
+        }
 
         //Create - Adicionar uma nova vaga
         [HttpPost]

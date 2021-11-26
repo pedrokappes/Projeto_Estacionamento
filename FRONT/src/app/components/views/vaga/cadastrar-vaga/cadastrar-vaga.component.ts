@@ -11,7 +11,6 @@ import { VagaService } from 'src/app/services/vaga.service';
 export class CadastrarVagaComponent implements OnInit {
 
     status! : string;
-    tipo! : string;
 
   constructor(private router: Router, private service: VagaService) { }
 
@@ -22,8 +21,7 @@ export class CadastrarVagaComponent implements OnInit {
 
     let vaga: Vaga = {
 
-        status: this.status,
-        tipo: this.tipo
+        status: this.status
     };
     
     this.service.create(vaga).subscribe((vaga) => {
