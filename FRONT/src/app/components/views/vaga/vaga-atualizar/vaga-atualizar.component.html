@@ -8,7 +8,7 @@
         <mat-form-field class="input" id="vagaId">
             <mat-label for="vagaId">Numero da vaga:</mat-label>
             <mat-select name="vagaId" [(ngModel)]="vagaId">
-                <mat-option *ngFor="let vaga of vagalista" value="{{ vaga.vagaId }}">
+                <mat-option *ngFor="let vaga of vagas" value="{{ vaga.vagaId }}">
                     {{ vaga.vagaId }}
                 </mat-option>
             </mat-select>
@@ -27,9 +27,9 @@
             </mat-select>
         </mat-form-field>
 
-        <mat-form-field class="input" id="carro">
-            <mat-label for="carro">Placa:</mat-label>
-            <mat-select name="carro" [(ngModel)]="carroId">
+        <mat-form-field class="input" id="carroId">
+            <mat-label for="carroId">Placa:</mat-label>
+            <mat-select name="carroId" [(ngModel)]="carroId">
                 <mat-option *ngFor="let carro of carros" value="{{ carro.carroId }}">
                     {{ carro.placa }}
                 </mat-option>

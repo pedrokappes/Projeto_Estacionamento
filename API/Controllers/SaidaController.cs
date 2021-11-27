@@ -29,7 +29,7 @@ namespace API.Controllers {
             int pessoaId = saida.PessoaId;
             int carroId = saida.CarroId;
             saida.Pessoa = _context.TabelaPessoas.Find(pessoaId);
-            saida.Pessoa = _context.TabelaPessoas.Find(carroId);
+            saida.Carro = _context.TabelaCarros.Find(carroId);
             _context.TabelaSaidas.Add(saida);
             _context.SaveChanges();
             return Created("", saida);

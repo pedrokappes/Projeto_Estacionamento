@@ -29,6 +29,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
+import { ListaSaidaComponent } from './components/views/saida/lista-saida/lista-saida.component';
+import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/saida-veiculo.component';
 
 @NgModule({
     declarations: [
@@ -45,6 +47,8 @@ import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/v
         AtualizarPessoaComponent,
         TemplateComponent,
         VagaAtualizarComponent,
+        ListaSaidaComponent,
+        SaidaVeiculoComponent,
 
     ],
     imports: [

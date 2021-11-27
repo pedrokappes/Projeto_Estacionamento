@@ -1,14 +1,16 @@
-### Read - Listar
-GET https://localhost:5001/api/saida/listasaida
-
-
-### Update - Atualizar por Id
+### Create - Atualizar por Id
 POST  https://localhost:5001/api/saida/saida
 Content-Type: application/json
 
 {   
-     "PessoaId" : 1,
+     "SaidaId" : 1,
     "PessoaId" : 1,
-    "carroId" : 1
+    "CarroId" : 1
 }
+
+
+
+### Read - Listar
+GET https://localhost:5001/api/saida/listasaida
+
 

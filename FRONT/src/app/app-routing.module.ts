@@ -11,6 +11,8 @@ import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir
 import { BuscarPessoaComponent } from './components/views/pessoa/buscar-pessoa/buscar-pessoa.component';
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
 import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
+import { ListaSaidaComponent } from './components/views/saida/lista-saida/lista-saida.component';
+import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/saida-veiculo.component';
 
 const routes: Routes = [
     {
@@ -64,6 +66,14 @@ const routes: Routes = [
     {
         path: "vaga/atualizar",
         component: VagaAtualizarComponent
+    },
+    {
+        path: "saida/lista",
+        component: ListaSaidaComponent
+    },
+    {
+        path: "saida/saida",
+        component: SaidaVeiculoComponent
     },
     
     
