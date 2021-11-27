@@ -13,13 +13,29 @@ import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pe
 import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
 import { ListaSaidaComponent } from './components/views/saida/lista-saida/lista-saida.component';
 import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/saida-veiculo.component';
+import { PessoaComponent } from './components/funcoes/pessoa/pessoa.component';
+import { CarroComponent } from './components/funcoes/carro/carro.component';
+import { VagaComponent } from './components/funcoes/vaga/vaga.component';
+
 
 const routes: Routes = [
     {
         path: "",
         component: CadastrarPessoaComponent,
     },
-       {
+    {
+        path: "index/pessoa",
+        component: PessoaComponent,
+    },
+    {
+        path: "index/carro",
+        component: CarroComponent,
+    },
+    {
+        path: "index/vaga",
+        component: VagaComponent
+    },
+    {
         path: "pessoa/listar",
         component: PessoaListarComponent,
     },
