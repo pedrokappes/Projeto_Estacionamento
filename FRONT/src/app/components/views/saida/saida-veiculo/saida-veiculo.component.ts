@@ -19,6 +19,8 @@ export class SaidaVeiculoComponent implements OnInit {
     carros!: Carro[];
     pessoas!: Pessoa[];
     horaEntrada!: Date;
+    placa!: string;
+    cpf!: string;
 
     constructor(private router: Router, private service: SaidaService, private pessoaService: PessoaService, private carroService: CarroService) { }
 
@@ -38,14 +40,14 @@ export class SaidaVeiculoComponent implements OnInit {
         let saida: Saida = {
             pessoaId : this.pessoaId,
             carroId : this.carroId,
-            horaEntrada :this.horaEntrada,
-
-
-
         };
+        
+        
         this.service.saida(saida).subscribe();
         alert('Saida de veiculo com sucesso!!!');
+        
 
+        
     }
 
 
