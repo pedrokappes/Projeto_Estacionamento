@@ -8,9 +8,9 @@ import { Pessoa } from 'src/app/models/pessoa';
 import { Saida } from 'src/app/models/saida';
 
 @Component({
-  selector: 'app-saida-veiculo',
-  templateUrl: './saida-veiculo.component.html',
-  styleUrls: ['./saida-veiculo.component.css']
+    selector: 'app-saida-veiculo',
+    templateUrl: './saida-veiculo.component.html',
+    styleUrls: ['./saida-veiculo.component.css']
 })
 export class SaidaVeiculoComponent implements OnInit {
 
@@ -18,33 +18,35 @@ export class SaidaVeiculoComponent implements OnInit {
     carroId!: number;
     carros!: Carro[];
     pessoas!: Pessoa[];
+    horaEntrada!: Date;
 
-    saida! : Saida[];
-
-  constructor(private router: Router, private service: SaidaService, private pessoaService: PessoaService, private carroService: CarroService) { }
+    constructor(private router: Router, private service: SaidaService, private pessoaService: PessoaService, private carroService: CarroService) { }
 
 
-  ngOnInit(): void {
-    this.carroService.list().subscribe(carros => {
-        this.carros = carros;
-    })
+    ngOnInit(): void {
+        this.carroService.list().subscribe(carros => {
+            this.carros = carros;
+        })
 
-    this.pessoaService.list().subscribe(pessoas => {
-        this.pessoas = pessoas;
-    })
-}
+        this.pessoaService.list().subscribe(pessoas => {
+            this.pessoas = pessoas;
+        })
+    }
 
-// atualizarVaga(): void {
+    baixarVeiculo(): void {
 
-//     let Saida: Saida = {
-//         pessoaId : this.pessoaId,
-//         carroId : this.carroId,
-//     };
-//     this.service.saida(saida).subscribe();
-//     alert('Saida de veiculo com sucesso!!!');
-//     window.location.reload();
+        let saida: Saida = {
+            pessoaId : this.pessoaId,
+            carroId : this.carroId,
+            horaEntrada :this.horaEntrada,
 
-// }
+
+
+        };
+        this.service.saida(saida).subscribe();
+        alert('Saida de veiculo com sucesso!!!');
+
+    }
 
 
 }
