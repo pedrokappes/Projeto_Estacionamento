@@ -7,7 +7,7 @@ export interface Carro {
     cor: string;
     pessoaId: number;
     pessoa?: Pessoa;
-    doraEntrada?: Date;
+    horaEntrada?: string;
 
 
 }

@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Saida de veiulo</mat-card-title>
+        <mat-card-title>Saida de veiculo</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
@@ -22,9 +22,7 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
-
+        
     </mat-card-content>
-    <button mat-flat-button color="primary" >Saida</button>
-
-    <button mat-flat-button color="primary" routerLink="/saida/lista" > Histórico de Saídas</button>
+    <button mat-flat-button color="primary" (click)="baixarVeiculo()" >Saida</button>  
 </mat-card>

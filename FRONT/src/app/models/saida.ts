@@ -3,9 +3,9 @@ import { Carro } from 'src/app/models/carro';
 export interface Saida { 
     saidaId? : number;
     pessoaId : number;
-    pessoa : Pessoa;
+    pessoa? : Pessoa;
     carroId : number;
     carro? : Carro;
-    horaEntrada : Date;
-    horaSaida: Date;
+    horaEntrada? : Date;
+    horaSaida?: string;
 }
