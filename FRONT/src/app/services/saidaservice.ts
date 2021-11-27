@@ -19,7 +19,7 @@ export class SaidaService{
     }
 
     saida(saida : Saida): Observable<Vaga> {
-        return this.http.put<Vaga>(`${this.baseURL}/saida`, saida);
+        return this.http.post<Vaga>(`${this.baseURL}/saida`, saida);
     }
 
 
