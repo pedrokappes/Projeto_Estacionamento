@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Saida de veiulo</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+        <mat-form-field class="input" id="pessoaId">
+            <mat-label for="pessoaId">Nome do cliente:</mat-label>
+            <mat-select name="pessoaId" [(ngModel)]="pessoaId">
+                <mat-option *ngFor="let pessoa of pessoas" value="{{ pessoa.pessoaId }}">
+                    {{pessoa.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="input" id="carroId">
+            <mat-label for="carroId">Placa do carro:</mat-label>
+            <mat-select name="carroId" [(ngModel)]="carroId">
+                <mat-option *ngFor="let carro of carros" value="{{ carro.carroId }}">
+                    {{carro.placa }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </mat-card-content>
+    <button mat-flat-button color="primary" >Saida</button>
+</mat-card>

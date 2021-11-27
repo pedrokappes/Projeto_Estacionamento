@@ -6,7 +6,7 @@ namespace API.Models
     {
           public Carro()
         {
-            HoraDeEntra = DateTime.Now;
+            HoraEntrada = DateTime.Now;
         }
         public int CarroId { get; set; }
         public string Modelo { get; set; }
@@ -14,6 +14,6 @@ namespace API.Models
         public string Cor { get; set; }        
         public int PessoaId { get; set; }
         public Pessoa Pessoa { get; set; }    
-        public DateTime HoraDeEntra { get; set;}
+        public DateTime HoraEntrada { get; set;}
     }
 }

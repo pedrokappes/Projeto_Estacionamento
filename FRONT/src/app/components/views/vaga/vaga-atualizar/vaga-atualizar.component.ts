@@ -17,7 +17,7 @@ export class VagaAtualizarComponent implements OnInit {
     carros!: Carro[];
     carroId!: number;
 
-    vagalista!: Vaga[];
+    vagas!: Vaga[];
 
     constructor(private router: Router, private service: VagaService, private carroService: CarroService) { }
 
@@ -26,8 +26,8 @@ export class VagaAtualizarComponent implements OnInit {
             this.carros = carros;
         })
 
-        this.service.list().subscribe(vagalista => {
-            this.vagalista = vagalista;
+        this.service.list().subscribe(vagas => {
+            this.vagas = vagas;
         })
     }
 
