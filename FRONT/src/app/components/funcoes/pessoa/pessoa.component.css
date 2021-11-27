@@ -1,13 +1,10 @@
-table{
-    width: 100%;
+.container{
+    display: table;
+    margin: 50px;
 }
 
 button{
     padding: 0px 15px 0px 15px;
     width: 100px;
     margin: 5px;
-}
-
-.voltar{
-    margin: 30px 5px 5px 5px;
 }

@@ -3,9 +3,7 @@
         <mat-card-title>Atualizar Carro</mat-card-title>
     </mat-card-header>
 
-    <mat-card-content>
-
-
+    <mat-card-content class="container">
         <mat-form-field class="input" id="carroId">
             <mat-label for="carroId">ID do Carro:</mat-label>
             <mat-select name="carroId" [(ngModel)]="carroId">
@@ -28,5 +26,8 @@
             <input matInput type="text" name="cor" [(ngModel)]="cor" />
         </mat-form-field>
     </mat-card-content>
+
     <button mat-flat-button color="primary" (click)="atualizarCarro()">Atualizar</button>
+
+    <button mat-stroked-button color="primary" routerLink="/index/carro"> Voltar </button>
 </mat-card>
