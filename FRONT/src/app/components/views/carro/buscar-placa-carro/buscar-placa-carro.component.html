@@ -1,5 +1,20 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Busca de Veiculos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="placa">
+            <mat-label for="placa">Informe a placa:</mat-label>
+            <input matInput type="text" name="cpf" [(ngModel)]="placa" />
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="buscar()">Buscar</button>
+    </mat-card-content>
 
+    <button mat-stroked-button color="primary" routerLink="/index/carro"> Voltar </button>
+    
+</mat-card>
 
+<!--
 <div id="placa">
     <label for="placa">Informe a placa:</label>
     <input type="text" name="placa" [(ngModel)]= "placa"/>
@@ -16,3 +31,4 @@
         {{"Cor: " + carroBuscado.cor }}
     </li>
 </ol>
+-->
