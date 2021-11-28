@@ -10,7 +10,7 @@ import { Saida } from 'src/app/models/saida';
 export class ListaSaidaComponent implements OnInit {
 
     listasaidas: Saida[] = [];
-    colunasExibidas : String[] = ["saidaId","pessoa","placa", "horaEntrada","horaSaida"];
+    colunasExibidas : String[] = ["saidaId","pessoa","placa", "horaEntrada","horaSaida","dinheiro"];
 
 
   constructor(private service : SaidaService) { }

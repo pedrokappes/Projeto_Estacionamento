@@ -6,6 +6,7 @@ export interface Saida {
     pessoa? : Pessoa;
     carroId : number;
     carro? : Carro;
+    dinheiro? : number;
     horaEntrada? : Date;
     horaSaida?: string;
 }
