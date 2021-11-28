@@ -32,8 +32,17 @@ namespace API.Controllers {
             saida.Carro = _context.TabelaCarros.Find(carroId);
             _context.TabelaSaidas.Add(saida);
             _context.SaveChanges();
+            // var carroDelete = _context.TabelaCarros.Find(carroId);
+            // _context.TabelaCarros.Remove(carroDelete);
+            //  var pessoaDelete = _context.TabelaPessoas.Find(pessoaId);
+            // _context.TabelaPessoas.Remove(pessoaDelete);
+            // _context.SaveChanges();
             return Created("", saida);
+            
         }
+
+
+        
         
     }
 }
