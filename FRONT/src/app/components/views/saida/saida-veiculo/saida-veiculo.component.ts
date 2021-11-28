@@ -26,6 +26,8 @@ export class SaidaVeiculoComponent implements OnInit {
     cpf!: string;
     horaPagar!: number;
     dinheiro!: string;
+    
+    
 
     constructor(private router: Router, private service: SaidaService, private pessoaService: PessoaService, private carroService: CarroService) { }
 
@@ -42,7 +44,6 @@ export class SaidaVeiculoComponent implements OnInit {
         this.service.list().subscribe(saida => {
             this.saidas = saida;
         })
-        
 
     }
 
@@ -65,9 +66,11 @@ export class SaidaVeiculoComponent implements OnInit {
                     this.excluirCarro();
                     this.calculo();
                     alert('Saida de veiculo com sucesso!!!');
-                    
+
+
+
                 }
-                else{
+                else {
                     alert("Esse carro não pertence a esse dono!!");
                 }
 
@@ -76,7 +79,7 @@ export class SaidaVeiculoComponent implements OnInit {
 
 
 
-      
+
 
     }
 
@@ -87,13 +90,13 @@ export class SaidaVeiculoComponent implements OnInit {
                 this.horaString = carro.horaEntrada as string;
                 this.horaEntrada = Date.parse(this.horaString);
 
-                //this.carroService.excluir(carro.placa).subscribe();
+                this.carroService.excluir(carro.placa).subscribe();
 
             }
         });
         this.pessoas.forEach(pessoa => {
             if (pessoa.pessoaId == this.pessoaId) {
-                //this.pessoaService.excluir(pessoa.cpf).subscribe();
+                this.pessoaService.excluir(pessoa.cpf).subscribe();
             }
         });
         this.horaEntrada = Date.parse("2021-11-27T20:20:00.0000000-03:00");
@@ -102,26 +105,35 @@ export class SaidaVeiculoComponent implements OnInit {
         this.horaSaida = Date.parse(this.horaString);
         this.horaSaida = Date.parse("2021-11-27T20:21:00.0000000-03:00");
 
-
-        //this.pessoaService.excluir(pessoa.cpf).subscribe();
-
     }
 
     public calculo(): void {
 
         this.horaPagar = this.horaSaida - this.horaEntrada;
-
+        //Entre 1 e 2 horas
         if (this.horaPagar > 60000) {
-            this.dinheiro = "R$: 30 Reais"
+            this.dinheiro = "R$: 15 Reais"
         }
         else if (this.horaPagar > 2 * 60000) {
             this.dinheiro = "R$: 30 Reais"
         }
+        //Entre 2 e 4 horas
+        if (this.horaPagar > 4 * 60000) {
+            this.dinheiro = "R$: 15 Reais"
+        }
+        //Mais de 4 horas
+        else if (this.horaPagar > 4 * 60000) {
+            this.dinheiro = "R$: 50 Reais"
+        }
+        //Menos de 1 horas
         else {
             this.dinheiro = "Não precisa pagar"
         }
-        
+
     }
+    
 
 
 }
+
+

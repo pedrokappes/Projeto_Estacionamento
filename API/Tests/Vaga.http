@@ -1,5 +1,5 @@
 ###Iniciando - criar
-POST https://localhost:5001/api/vaga/inicial
+GET https://localhost:5001/api/vaga/inicial
 
 ### Read - Listar
 GET https://localhost:5001/api/vaga/listavagas

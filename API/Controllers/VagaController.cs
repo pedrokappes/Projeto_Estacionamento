@@ -18,7 +18,7 @@ namespace API.Controllers {
         }
 
         //Inicializando - Gerando uma nova vaga
-        [HttpPost]
+        [HttpGet]
         [Route("inicial")]
         public IActionResult inicial()
         {

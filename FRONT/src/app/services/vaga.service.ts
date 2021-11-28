@@ -13,6 +13,11 @@ export class VagaService{
 
     constructor(private http: HttpClient) {}
 
+
+    inicial(){      
+        this.http.get(`${this.baseURL}/inicial`);  
+    }
+
     list(): Observable<Vaga[]> {
         return this.http.get<Vaga[]>(`${this.baseURL}/listavagas`)
     }
