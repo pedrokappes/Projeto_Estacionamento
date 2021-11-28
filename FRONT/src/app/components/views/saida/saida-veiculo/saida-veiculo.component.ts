@@ -1,4 +1,4 @@
-import { SaidaService } from './../../../../services/saidaservice';
+import { SaidaService } from '../../../../services/saidaservice';
 import { Component, OnInit } from '@angular/core';
 import { Data, Router } from '@angular/router';
 import { CarroService } from 'src/app/services/carro.service';
@@ -25,7 +25,7 @@ export class SaidaVeiculoComponent implements OnInit {
     placa!: string;
     cpf!: string;
     horaPagar!: number;
-    dinheiro!: string;
+    dinheiro!: number;
     
     
 
@@ -55,23 +55,30 @@ export class SaidaVeiculoComponent implements OnInit {
             carroId: this.carroId,
         };
 
-        this.service.saida(saida).subscribe((saida) => {
-        });
-
         this.carros.forEach(carro => {
             if (carro.carroId == this.carroId) {
                 console.log("teste");
                 if (carro.pessoaId == this.pessoaId) {
 
-                    this.excluirCarro();
                     this.calculo();
+                    let saida: Saida = {
+                        pessoaId: this.pessoaId,
+                        carroId: this.carroId,
+                        dinheiro: this.dinheiro,
+                    };
+            
+                    this.service.saida(saida).subscribe((saida) => {
+                    });
+                    this.excluirCarro();
+                    
                     alert('Saida de veiculo com sucesso!!!');
-
+                   
 
 
                 }
                 else {
                     alert("Esse carro não pertence a esse dono!!");
+                    
                 }
 
             }
@@ -79,7 +86,7 @@ export class SaidaVeiculoComponent implements OnInit {
 
 
 
-
+      
 
     }
 
@@ -111,23 +118,23 @@ export class SaidaVeiculoComponent implements OnInit {
 
         this.horaPagar = this.horaSaida - this.horaEntrada;
         //Entre 1 e 2 horas
-        if (this.horaPagar > 60000) {
-            this.dinheiro = "R$: 15 Reais"
+        if (this.horaPagar > 5* 60000) {
+            this.dinheiro = 50;
         }
-        else if (this.horaPagar > 2 * 60000) {
-            this.dinheiro = "R$: 30 Reais"
+        else if (this.horaPagar > 4 * 60000) {
+            this.dinheiro = 40;
         }
         //Entre 2 e 4 horas
-        if (this.horaPagar > 4 * 60000) {
-            this.dinheiro = "R$: 15 Reais"
+        else if (this.horaPagar > 3 * 60000) {
+            this.dinheiro = 30;
         }
         //Mais de 4 horas
-        else if (this.horaPagar > 4 * 60000) {
-            this.dinheiro = "R$: 50 Reais"
+        else if (this.horaPagar > 2 * 60000) {
+            this.dinheiro = 30;
         }
         //Menos de 1 horas
         else {
-            this.dinheiro = "Não precisa pagar"
+            this.dinheiro = 30;
         }
 
     }
