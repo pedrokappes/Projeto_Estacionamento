@@ -31,6 +31,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
 import { ListaSaidaComponent } from './components/views/saida/lista-saida/lista-saida.component';
 import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/saida-veiculo.component';
+import { PessoaComponent } from './components/funcoes/pessoa/pessoa.component';
+import { CarroComponent } from './components/funcoes/carro/carro.component';
+import { VagaComponent } from './components/funcoes/vaga/vaga.component';
 
 @NgModule({
     declarations: [
@@ -49,6 +52,9 @@ import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/sa
         VagaAtualizarComponent,
         ListaSaidaComponent,
         SaidaVeiculoComponent,
+        PessoaComponent,
+        CarroComponent,
+        VagaComponent,
 
     ],
     imports: [
