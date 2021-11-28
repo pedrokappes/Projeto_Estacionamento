@@ -1,7 +1,9 @@
+import { Vaga } from './../../../../models/vaga';
 import { Pessoa } from 'src/app/models/pessoa';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PessoaService } from 'src/app/services/pessoa.service';
+import { VagaService } from 'src/app/services/vaga.service';
 
 @Component({
   selector: 'app-cadastrar-pessoa',
@@ -16,9 +18,13 @@ export class CadastrarPessoaComponent implements OnInit {
 
   constructor(private router: Router, private service: PessoaService) { }
 
+  
   ngOnInit(): void {
-  }
 
+   
+    
+  }
+  
   casdastrarCliente(): void{
 
     let pessoa: Pessoa = {
