@@ -22,9 +22,11 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
-        
-    </mat-card-content>
-    <button mat-flat-button color="primary" >Saida</button>
 
-    <button mat-flat-button color="primary" routerLink="/saida/lista" > Histórico de Saídas</button>
+
+    </mat-card-content>
+    <button mat-flat-button color="primary" (click)="baixarVeiculo()">Saida</button> 
+
+    <h1 #preco></h1>
+
 </mat-card>

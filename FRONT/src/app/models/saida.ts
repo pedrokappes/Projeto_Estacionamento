@@ -7,5 +7,5 @@ export interface Saida {
     carroId : number;
     carro? : Carro;
     horaEntrada? : Date;
-    horaSaida?: Date;
+    horaSaida?: string;
 }

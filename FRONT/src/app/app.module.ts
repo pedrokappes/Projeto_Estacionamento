@@ -17,7 +17,6 @@ import { PessoaExcluirComponent } from './components/views/pessoa/pessoa-excluir
 import { AtualizarPessoaComponent } from './components/views/pessoa/atualizar-pessoa/atualizar-pessoa.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TemplateComponent } from './components/template/template.component';
-import {MatGridListModule} from '@angular/material/grid-list';
 //Eu 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -32,9 +31,6 @@ import {MatSelectModule} from '@angular/material/select';
 import { VagaAtualizarComponent } from './components/views/vaga/vaga-atualizar/vaga-atualizar.component';
 import { ListaSaidaComponent } from './components/views/saida/lista-saida/lista-saida.component';
 import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/saida-veiculo.component';
-import { PessoaComponent } from './components/funcoes/pessoa/pessoa.component';
-import { CarroComponent } from './components/funcoes/carro/carro.component';
-import { VagaComponent } from './components/funcoes/vaga/vaga.component';
 
 @NgModule({
     declarations: [
@@ -53,9 +49,6 @@ import { VagaComponent } from './components/funcoes/vaga/vaga.component';
         VagaAtualizarComponent,
         ListaSaidaComponent,
         SaidaVeiculoComponent,
-        PessoaComponent,
-        CarroComponent,
-        VagaComponent,
 
     ],
     imports: [
@@ -74,8 +67,8 @@ import { VagaComponent } from './components/funcoes/vaga/vaga.component';
         MatFormFieldModule,
         MatInputModule,
         MatCardModule,
-        MatSelectModule,
-        MatGridListModule
+        MatSelectModule
+
     ],
     providers: [],
     bootstrap: [AppComponent]
