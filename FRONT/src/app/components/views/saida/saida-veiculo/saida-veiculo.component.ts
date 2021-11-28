@@ -50,25 +50,20 @@ export class SaidaVeiculoComponent implements OnInit {
 
     baixarVeiculo(): void {
 
-        let saida: Saida = {
+        let saidas: Saida = {
             pessoaId: this.pessoaId,
             carroId: this.carroId,
         };
+        this.service.saida(saidas).subscribe((saida) => {
+        });
 
         this.carros.forEach(carro => {
             if (carro.carroId == this.carroId) {
                 console.log("teste");
                 if (carro.pessoaId == this.pessoaId) {
 
-                    this.calculo();
-                    let saida: Saida = {
-                        pessoaId: this.pessoaId,
-                        carroId: this.carroId,
-                        dinheiro: this.dinheiro,
-                    };
-            
-                    this.service.saida(saida).subscribe((saida) => {
-                    });
+                    this.calculo();          
+                    
                     this.excluirCarro();
                     
                     alert('Saida de veiculo com sucesso!!!');
