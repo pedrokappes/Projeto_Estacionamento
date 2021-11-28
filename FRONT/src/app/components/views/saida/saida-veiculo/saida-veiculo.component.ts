@@ -68,7 +68,7 @@ export class SaidaVeiculoComponent implements OnInit {
                     
                 }
                 else{
-                    alert("Esse carro não pertence a esse dono!!!");
+                    alert("Esse carro não pertence a esse dono!!");
                 }
 
             }
