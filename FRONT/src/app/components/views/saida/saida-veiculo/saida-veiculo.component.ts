@@ -26,7 +26,8 @@ export class SaidaVeiculoComponent implements OnInit {
     cpf!: string;
     horaPagar!: number;
     dinheiro!: number;
-    
+    carroExcluir! : string;
+    pessoaExcluir! : string;
     
 
     constructor(private router: Router, private service: SaidaService, private pessoaService: PessoaService, private carroService: CarroService) { }
@@ -50,26 +51,23 @@ export class SaidaVeiculoComponent implements OnInit {
 
     baixarVeiculo(): void {
 
-        let saidas: Saida = {
+        let saida: Saida = {
             pessoaId: this.pessoaId,
             carroId: this.carroId,
         };
-        this.service.saida(saidas).subscribe((saida) => {
-        });
+       
 
         this.carros.forEach(carro => {
             if (carro.carroId == this.carroId) {
-                console.log("teste");
                 if (carro.pessoaId == this.pessoaId) {
 
-                    this.calculo();          
-                    
-                    this.excluirCarro();
-                    
+                    this.buscarTime();
+                    this.calculo(); 
+                    saida.dinheiro = this.dinheiro;
+                    this.service.saida(saida).subscribe();
+                    this.excluir();
                     alert('Saida de veiculo com sucesso!!!');
-                   
-
-
+                 
                 }
                 else {
                     alert("Esse carro não pertence a esse dono!!");
@@ -85,20 +83,22 @@ export class SaidaVeiculoComponent implements OnInit {
 
     }
 
-    public excluirCarro(): void {
+    public buscarTime(): void {
 
         this.carros.forEach(carro => {
             if (carro.carroId == this.carroId) {
                 this.horaString = carro.horaEntrada as string;
                 this.horaEntrada = Date.parse(this.horaString);
 
-                this.carroService.excluir(carro.placa).subscribe();
+                this.carroExcluir = carro.placa
+               
 
             }
         });
         this.pessoas.forEach(pessoa => {
             if (pessoa.pessoaId == this.pessoaId) {
-                this.pessoaService.excluir(pessoa.cpf).subscribe();
+                this.pessoaExcluir = pessoa.cpf
+               
             }
         });
         this.horaEntrada = Date.parse("2021-11-27T20:20:00.0000000-03:00");
@@ -108,28 +108,34 @@ export class SaidaVeiculoComponent implements OnInit {
         this.horaSaida = Date.parse("2021-11-27T20:21:00.0000000-03:00");
 
     }
+    
+    public excluir():void {
+        
+
+    }
 
     public calculo(): void {
 
         this.horaPagar = this.horaSaida - this.horaEntrada;
+
         //Entre 1 e 2 horas
-        if (this.horaPagar > 5* 60000) {
-            this.dinheiro = 50;
+        if (this.horaPagar > 600000) {
+            this.dinheiro = 10;
         }
-        else if (this.horaPagar > 4 * 60000) {
-            this.dinheiro = 40;
+        else if (this.horaPagar > 2 * 600000) {
+            this.dinheiro = 20;
         }
         //Entre 2 e 4 horas
-        else if (this.horaPagar > 3 * 60000) {
+        else if (this.horaPagar > 3 * 600000) {
             this.dinheiro = 30;
         }
         //Mais de 4 horas
-        else if (this.horaPagar > 2 * 60000) {
-            this.dinheiro = 30;
+        else if (this.horaPagar > 4 * 600000) {
+            this.dinheiro = 50;
         }
         //Menos de 1 horas
         else {
-            this.dinheiro = 30;
+            this.dinheiro = 0;
         }
 
     }

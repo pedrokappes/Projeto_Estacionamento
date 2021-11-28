@@ -16,6 +16,7 @@ import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/sa
 import { PessoaComponent } from './components/funcoes/pessoa/pessoa.component';
 import { CarroComponent } from './components/funcoes/carro/carro.component';
 import { VagaComponent } from './components/funcoes/vaga/vaga.component';
+import { TelaPagarComponent } from './components/views/saida/tela-pagar/tela-pagar.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,11 @@ const routes: Routes = [
         path: "pessoa/cadastrar",
         component: CadastrarPessoaComponent,
     },
+     {
+        path: "saida/pagar",
+        component: TelaPagarComponent,
+    },
+    
     {
         path: "index/pessoa",
         component: PessoaComponent,

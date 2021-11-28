@@ -34,6 +34,7 @@ import { SaidaVeiculoComponent } from './components/views/saida/saida-veiculo/sa
 import { PessoaComponent } from './components/funcoes/pessoa/pessoa.component';
 import { CarroComponent } from './components/funcoes/carro/carro.component';
 import { VagaComponent } from './components/funcoes/vaga/vaga.component';
+import { TelaPagarComponent } from './components/views/saida/tela-pagar/tela-pagar.component';
 
 @NgModule({
     declarations: [
@@ -55,6 +56,7 @@ import { VagaComponent } from './components/funcoes/vaga/vaga.component';
         PessoaComponent,
         CarroComponent,
         VagaComponent,
+        TelaPagarComponent,
 
     ],
     imports: [
