@@ -19,8 +19,9 @@ import { VagaComponent } from './components/funcoes/vaga/vaga.component';
 
 
 const routes: Routes = [
+    
     {
-        path: "",
+        path: "pessoa/cadastrar",
         component: CadastrarPessoaComponent,
     },
     {
