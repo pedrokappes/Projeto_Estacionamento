@@ -17,7 +17,6 @@ namespace API.Controllers {
             _context = context;
         }
 
-
         //Create - Adicionar uma nova pessoa
         [HttpPost]
         [Route("novapessoa")]
@@ -27,7 +26,6 @@ namespace API.Controllers {
             _context.SaveChanges();
             return Created("", pessoa);
         }
-
 
         //Read - Listar relação de pessoas
         [HttpGet]
@@ -47,7 +45,6 @@ namespace API.Controllers {
             return Ok(pessoa);          
         }
         
-
         //Upgrade - Atualizar informações das pessoa id
         [HttpPut]
         [Route("atualizarpessoa")]

@@ -17,7 +17,6 @@ namespace API.Controllers {
             _context = context;
         }
 
-
         //Create - Adicionar entrada de Carros
         [HttpPost]
         [Route("cadastrarcarro")]
@@ -29,7 +28,6 @@ namespace API.Controllers {
             return Created("", carro);
         }
         
-
         //Read - Listar relação de carros
         [HttpGet]
         [Route("listacarros")]
@@ -47,7 +45,6 @@ namespace API.Controllers {
 
             return Ok(carro);          
         }
-
 
         //Upgrade - Atualizar informações dos carros 
         [HttpPut]
